@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.25">
+	<Project ProjectGUID="{6B4513DE-E205-4122-B1DD-99BA4266BC02}" TargetNetId="5.24.131.22.1.1" Target64Bit="true" ShowHideConfigurations="#x3c7">
+		<System>
+			<Settings MaxCpus="4" NonWinCpus="2">
+				<Cpu CpuId="3"/>
+			</Settings>
+			<Licenses CacheOrCheckLicensesOnStartup="true">
+				<Target>
+					<LicenseDevice DongleHardwareId="2" DongleDevice="#x71010001" DongleLevel="70" DongleSystemId="{256E8B65-A19F-8909-7280-9EA2AF0183D4}"/>
+				</Target>
+			</Licenses>
+			<Tasks>
+				<Task Id="3" Priority="20" CycleTime="10000" AmsPort="350" AdtTasks="true">
+					<Name>PlcTask</Name>
+				</Task>
+			</Tasks>
+		</System>
+		<Plc>
+			<Project File="SimPLC.xti"/>
+		</Plc>
+		<Io>
+			<Device File="Device 1 (EtherCAT Simulation).xti" Id="1"/>
+		</Io>
+	</Project>
+</TcSmProject>

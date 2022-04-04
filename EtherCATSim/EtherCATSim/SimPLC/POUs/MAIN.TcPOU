@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
+  <POU Name="MAIN" Id="{c90d7607-1feb-46bb-9bc2-7b1fb026a69c}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	SimEncoderCount	AT%Q*	:UDINT ;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[SimEncoderCount:=SimEncoderCount+1;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
