@@ -4,10 +4,23 @@
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
 	SimEncoderCount	AT%Q*	:UDINT ;
+	SimAnalogOut1	AT%I*	:INT;
+	SimAnalogOut2	AT%I*	:INT;
+	
+	AnalogOutofSyncCnt		:UDINT;
+	DeltaAnalogOut			:INT;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[SimEncoderCount:=SimEncoderCount+1;]]></ST>
+      <ST><![CDATA[SimEncoderCount:=SimEncoderCount+1;
+
+IF SimAnalogOut1<>0 AND SimAnalogOut2<>0 THEN
+	IF SimAnalogOut1 <> SimAnalogOut2 THEN
+		DeltaAnalogOut		:=SimAnalogOut1-SimAnalogOut2;
+		AnalogOutofSyncCnt	:=AnalogOutofSyncCnt+1;
+	END_IF
+END_IF
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

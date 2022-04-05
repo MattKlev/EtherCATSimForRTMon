@@ -14,7 +14,7 @@
 	<ImageDatas>
 		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000000000ff00ffff00ffff00ff000000ff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ff000000ff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ff000000ff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ff000000ff00ff000000ff00ff000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff000000000000ff00ff000000000000ff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ff000000ff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 	</ImageDatas>
-	<Box Id="2" BoxType="9910">
+	<Box Id="4" BoxType="9910">
 		<Name>__FILENAME__</Name>
 		<Comment><![CDATA[EL5001-0000-1021]]></Comment>
 		<ImageId>1000</ImageId>
@@ -23,19 +23,19 @@
 			<Var>
 				<Name>FrameCountIn</Name>
 				<Type>UDINT</Type>
-				<BitOffs>2048</BitOffs>
+				<BitOffs>2112</BitOffs>
 				<InOut>0</InOut>
 			</Var>
 			<Var>
 				<Name>State</Name>
 				<Type>UINT</Type>
-				<BitOffs>2096</BitOffs>
+				<BitOffs>2192</BitOffs>
 				<InOut>0</InOut>
 			</Var>
 		</Vars>
 		<EcatSimuBox Type="EL5001 1Ch. SSI Encoder" Desc="EL5001" PortConnectionAddress="0000e90300000000">
-			<BoxSettings PhysAddr="1002" PortDesc="10" UsedPorts="1" PdiControl="3072" MbxWriteStart="6144" MbxWriteSize="246" MbxReadStart="6390" MbxReadSize="246" OutputStart="4096" InputStart="4352" InputSize="6" VendorId="2" ProductCode="327757906" Revision="66912256" InOffset="2048" StateOffset="128" StateMask="1" PreviuosPortPort="1" PreviuosPortEcAdr="1001" Flags="2" InputBitSize="48">
-				<Fmmu LogStart="16777216" LogLength="6" LogEndBit="7" PhysStart="4352" ReadEnable="true" Enable="true"/>
+			<BoxSettings PhysAddr="1002" PortDesc="10" UsedPorts="3" PdiControl="3072" MbxWriteStart="6144" MbxWriteSize="246" MbxReadStart="6390" MbxReadSize="246" OutputStart="4096" InputStart="4352" InputSize="6" VendorId="2" ProductCode="327757906" Revision="66912256" InOffset="2048" StateOffset="128" StateMask="1" PreviuosPortPort="1" PreviuosPortEcAdr="1001" Flags="2" InputBitSize="48">
+				<Fmmu LogStart="16779264" LogLength="6" LogEndBit="7" PhysStart="4352" ReadEnable="true" Enable="true"/>
 				<Fmmu LogStart="150994944" LogLength="1" PhysStart="2061" ReadEnable="true" Enable="true"/>
 				<Fmmu/>
 				<Fmmu/>
