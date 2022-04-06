@@ -4,10 +4,11 @@
 		<System>
 			<Settings MaxCpus="4" NonWinCpus="2">
 				<Cpu CpuId="3" BaseTime="500"/>
+				<IoIdleTask CycleTime="500"/>
 			</Settings>
 			<Licenses CacheOrCheckLicensesOnStartup="true">
 				<Target>
-					<LicenseDevice DongleHardwareId="2" DongleDevice="#x71010000" DongleLevel="70" DongleSystemId="{256E8B65-A19F-8909-7280-9EA2AF0183D4}"/>
+					<LicenseDevice DongleHardwareId="2" DongleDevice="#x71010001" DongleLevel="70" DongleSystemId="{256E8B65-A19F-8909-7280-9EA2AF0183D4}"/>
 				</Target>
 			</Licenses>
 			<Tasks>

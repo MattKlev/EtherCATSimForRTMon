@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
+  <POU Name="PRG_AnalogSim" Id="{52cd9b03-f9ad-4b35-bfdc-bcbfe944d083}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_AnalogSim
+VAR
+	SimAnalogOut1	AT%I*	:INT;
+	SimAnalogOut2	AT%I*	:INT;
+	
+	AnalogOutofSyncCnt		:UDINT;
+	DeltaAnalogOut			:INT;	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF SimAnalogOut1<>0 AND SimAnalogOut2<>0 THEN
+	IF SimAnalogOut1 <> SimAnalogOut2 THEN
+		DeltaAnalogOut		:=SimAnalogOut1-SimAnalogOut2;
+		AnalogOutofSyncCnt	:=AnalogOutofSyncCnt+1;
+	ELSE
+		DeltaAnalogOut:=0;
+	END_IF
+END_IF
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

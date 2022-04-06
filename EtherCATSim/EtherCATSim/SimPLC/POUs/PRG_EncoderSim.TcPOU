@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
+  <POU Name="PRG_EncoderSim" Id="{8b7b69dd-0b05-4293-8e65-8924344d526a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_EncoderSim
+VAR
+	SimEncoderCount	AT%Q*	:UDINT ;	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[SimEncoderCount:=SimEncoderCount+1;
+
+IF SimEncoderCount>=4096 THEN
+	SimEncoderCount:=0;
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

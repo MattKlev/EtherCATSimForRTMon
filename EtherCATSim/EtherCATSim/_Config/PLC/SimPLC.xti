@@ -7,18 +7,18 @@
 			<Vars VarGrpType="1">
 				<Name>PlcTask Inputs</Name>
 				<Var>
-					<Name>MAIN.SimAnalogOut1</Name>
+					<Name>PRG_AnalogSim.SimAnalogOut1</Name>
 					<Type>INT</Type>
 				</Var>
 				<Var>
-					<Name>MAIN.SimAnalogOut2</Name>
+					<Name>PRG_AnalogSim.SimAnalogOut2</Name>
 					<Type>INT</Type>
 				</Var>
 			</Vars>
 			<Vars VarGrpType="2" AreaNo="1">
 				<Name>PlcTask Outputs</Name>
 				<Var>
-					<Name>MAIN.SimEncoderCount</Name>
+					<Name>PRG_EncoderSim.SimEncoderCount</Name>
 					<Type>UDINT</Type>
 				</Var>
 			</Vars>
@@ -30,7 +30,7 @@
 						<OTCID>#x02010030</OTCID>
 					</ManualConfig>
 					<Priority>20</Priority>
-					<CycleTime>50000</CycleTime>
+					<CycleTime>1000000</CycleTime>
 				</Context>
 			</Contexts>
 			<TaskPouOids>
@@ -41,11 +41,11 @@
 	<Mappings>
 		<OwnerA Name="SimPLC Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT Simulation)^Term 2 (EL5001)">
-				<Link VarA="PlcTask Outputs^MAIN.SimEncoderCount" VarB="SSI Inputs^Counter value"/>
+				<Link VarA="PlcTask Outputs^PRG_EncoderSim.SimEncoderCount" VarB="SSI Inputs^Counter value"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT Simulation)^Term 4 (EL4102)">
-				<Link VarA="PlcTask Inputs^MAIN.SimAnalogOut1" VarB="Channel 1^Output"/>
-				<Link VarA="PlcTask Inputs^MAIN.SimAnalogOut2" VarB="Channel 2^Output"/>
+				<Link VarA="PlcTask Inputs^PRG_AnalogSim.SimAnalogOut1" VarB="Channel 1^Output"/>
+				<Link VarA="PlcTask Inputs^PRG_AnalogSim.SimAnalogOut2" VarB="Channel 2^Output"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

@@ -69,7 +69,7 @@
 				<Type>UDINT</Type>
 			</Var>
 		</Vars>
-		<Image Id="1" AddrType="1" ImageType="3" SizeIn="65536" SizeOut="65536">
+		<Image Id="1" ImageFlags="#x00000030" AddrType="1" ImageType="3" SizeIn="65536" SizeOut="65536">
 			<Name>Image</Name>
 		</Image>
 		<Box File="Term 1 (EK1100).xti" Id="3"/>
