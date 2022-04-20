@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.25" ClassName="CEcatSimuBoxDef" SubType="9910">
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+	</ImageDatas>
+	<Box Id="18" BoxType="9910">
+		<Name>__FILENAME__</Name>
+		<Comment><![CDATA[EL4102-0000-1020]]></Comment>
+		<ImageId>1000</ImageId>
+		<Vars VarGrpType="3" InsertType="1">
+			<Name>InfoData</Name>
+			<Var>
+				<Name>FrameCountOut</Name>
+				<Type>UDINT</Type>
+				<BitOffs>2144</BitOffs>
+				<InOut>0</InOut>
+			</Var>
+			<Var>
+				<Name>State</Name>
+				<Type>UINT</Type>
+				<BitOffs>2208</BitOffs>
+				<InOut>0</InOut>
+			</Var>
+		</Vars>
+		<EcatSimuBox Type="EL4102 2Ch. Ana. Output  0-10V, 16bit" Desc="EL4102" PortConnectionAddress="0000ea0300000000">
+			<BoxSettings PhysAddr="1003" PortDesc="10" UsedPorts="1" PdiControl="3072" MbxWriteStart="6144" MbxWriteSize="246" MbxReadStart="6390" MbxReadSize="246" OutputStart="4096" OutputSize="4" InputStart="4352" VendorId="2" ProductCode="268841042" Revision="66846720" OutOffset="2048" StateOffset="128" StateMask="2" PreviuosPortPort="1" PreviuosPortEcAdr="1002" Flags="2" OutputBitSize="32">
+				<Fmmu LogStart="16777216" LogLength="4" LogEndBit="7" PhysStart="4096" WriteEnable="true" Enable="true"/>
+				<Fmmu LogStart="150994944" LogLength="1" LogStartBit="1" LogEndBit="1" PhysStart="2061" ReadEnable="true" Enable="true"/>
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Sm/>
+				<Sm/>
+				<Sm SmStart="4096" SmLength="4" SmControl="36" SmActivate="1"/>
+				<Sm SmStart="4352" SmControl="32"/>
+				<Sm/>
+				<Sm/>
+				<Sm/>
+				<Sm/>
+			</BoxSettings>
+			<Pdo Name="Channel 1" Index="#x1600" Flags="#x0010" SyncMan="2">
+				<Entry Name="Output" BitLen="16" Index="#x6411" Sub="#x01" Flags="#x00020000">
+					<Type>INT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="Channel 2" Index="#x1601" Flags="#x0010" SyncMan="2">
+				<Entry Name="Output" BitLen="16" Index="#x6411" Sub="#x02" Flags="#x00020000">
+					<Type>INT</Type>
+				</Entry>
+			</Pdo>
+		</EcatSimuBox>
+	</Box>
+</TcSmItem>

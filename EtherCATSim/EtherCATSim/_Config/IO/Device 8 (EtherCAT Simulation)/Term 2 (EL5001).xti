@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.25" ClassName="CEcatSimuBoxDef" SubType="9910">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000A}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..9] OF BIT</Name>
+			<BitSize>10</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>10</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000000000ff00ffff00ffff00ff000000ff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ff000000ff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ff000000ff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ff000000ff00ff000000ff00ff000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff000000000000ff00ff000000000000ff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ff000000ff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+	</ImageDatas>
+	<Box Id="23" BoxType="9910">
+		<Name>__FILENAME__</Name>
+		<Comment><![CDATA[EL5001-0000-1021]]></Comment>
+		<ImageId>1000</ImageId>
+		<Vars VarGrpType="3" InsertType="1">
+			<Name>InfoData</Name>
+			<Var>
+				<Name>FrameCountIn</Name>
+				<Type>UDINT</Type>
+				<BitOffs>2112</BitOffs>
+				<InOut>0</InOut>
+			</Var>
+			<Var>
+				<Name>State</Name>
+				<Type>UINT</Type>
+				<BitOffs>2192</BitOffs>
+				<InOut>0</InOut>
+			</Var>
+		</Vars>
+		<EcatSimuBox Type="EL5001 1Ch. SSI Encoder" Desc="EL5001" PortConnectionAddress="0000e90300000000">
+			<BoxSettings PhysAddr="1002" PortDesc="10" UsedPorts="3" PdiControl="3072" MbxWriteStart="6144" MbxWriteSize="246" MbxReadStart="6390" MbxReadSize="246" OutputStart="4096" InputStart="4352" InputSize="6" VendorId="2" ProductCode="327757906" Revision="66912256" InOffset="2048" StateOffset="128" StateMask="1" PreviuosPortPort="1" PreviuosPortEcAdr="1001" Flags="2" InputBitSize="48">
+				<Fmmu LogStart="16779264" LogLength="6" LogEndBit="7" PhysStart="4352" ReadEnable="true" Enable="true"/>
+				<Fmmu LogStart="150994944" LogLength="1" PhysStart="2061" ReadEnable="true" Enable="true"/>
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Sm/>
+				<Sm/>
+				<Sm SmStart="4096" SmControl="4"/>
+				<Sm SmStart="4352" SmLength="6" SmControl="32" SmActivate="1"/>
+				<Sm/>
+				<Sm/>
+				<Sm/>
+				<Sm/>
+			</BoxSettings>
+			<Pdo Name="Channel 1" Index="#x1a00" InOut="1" Flags="#x0010">
+				<ExcludePdo>#x1a01</ExcludePdo>
+				<Entry Name="Status" BitLen="8" Index="#x3101" Sub="#x01">
+					<Type>USINT</Type>
+				</Entry>
+				<Entry Name="Value" BitLen="32" Index="#x3101" Sub="#x02">
+					<Type>UDINT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="SSI Inputs" Index="#x1a01" InOut="1" Flags="#x0010" SyncMan="3">
+				<ExcludePdo>#x1a00</ExcludePdo>
+				<Entry Name="Status__Data error" BitLen="1" Index="#x6010" Sub="#x01">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Frame error" BitLen="1" Index="#x6010" Sub="#x02">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Power failure" BitLen="1" Index="#x6010" Sub="#x03">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__" BitLen="10">
+					<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+				</Entry>
+				<Entry Name="Status__Sync error" BitLen="1" Index="#x6010" Sub="#x0e">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__TxPDO State" BitLen="1" Index="#x1801" Sub="#x07">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__TxPDO Toggle" BitLen="1" Index="#x1801" Sub="#x09">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Counter value" BitLen="32" Index="#x6010" Sub="#x11">
+					<Type>UDINT</Type>
+				</Entry>
+			</Pdo>
+		</EcatSimuBox>
+	</Box>
+</TcSmItem>

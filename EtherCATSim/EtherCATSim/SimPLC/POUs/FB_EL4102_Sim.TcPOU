@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
+  <POU Name="FB_EL4102_Sim" Id="{1b4eeef2-a9e3-4b90-b392-e0a733eada04}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_EL4102_Sim
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	Ch1				AT%I*	:INT;
+	Ch2				AT%I*	:INT;	
+
+	Ch1NotEqualToCh2		:UDINT;
+	Delta					:INT;	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF Ch1<>0 AND Ch2<>0 THEN
+	IF Ch1 <> Ch2 THEN
+		Delta				:=Ch1-Ch2;
+		Ch1NotEqualToCh2	:=Ch1NotEqualToCh2+1;
+	ELSE
+		Delta:=0;
+	END_IF
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
