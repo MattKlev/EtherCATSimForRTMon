@@ -49,38 +49,6 @@
 					<Name>PRG_AnalogSim.arEL4102[4].Ch2</Name>
 					<Type>INT</Type>
 				</Var>
-				<Var>
-					<Name>PRG_AnalogSim.arEL4102[5].Ch1</Name>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>PRG_AnalogSim.arEL4102[5].Ch2</Name>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>PRG_AnalogSim.arEL4102[6].Ch1</Name>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>PRG_AnalogSim.arEL4102[6].Ch2</Name>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>PRG_AnalogSim.arEL4102[7].Ch1</Name>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>PRG_AnalogSim.arEL4102[7].Ch2</Name>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>PRG_AnalogSim.arEL4102[8].Ch1</Name>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>PRG_AnalogSim.arEL4102[8].Ch2</Name>
-					<Type>INT</Type>
-				</Var>
 			</Vars>
 			<Vars VarGrpType="2" AreaNo="1">
 				<Name>PlcTask Outputs</Name>
@@ -89,6 +57,26 @@
 					<Type>UDINT</Type>
 				</Var>
 			</Vars>
+			<UnrestoredVarLinks ImportTime="2022-05-02T18:03:23">
+				<OwnerA Name="InputDst" Prefix="TIPC^SimPLC^SimPLC Instance" Type="1">
+					<OwnerB Name="TIID^Device 5 (EtherCAT Simulation)^Term 4 (EL4102)">
+						<Link VarA="PRG_AnalogSim.arEL4102[5].Ch1" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="Channel 1^Output" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_AnalogSim.arEL4102[5].Ch2" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="Channel 2^Output" RestoreInfo="ANotFound"/>
+					</OwnerB>
+					<OwnerB Name="TIID^Device 6 (EtherCAT Simulation)^Term 4 (EL4102)">
+						<Link VarA="PRG_AnalogSim.arEL4102[6].Ch1" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="Channel 1^Output" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_AnalogSim.arEL4102[6].Ch2" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="Channel 2^Output" RestoreInfo="ANotFound"/>
+					</OwnerB>
+					<OwnerB Name="TIID^Device 7 (EtherCAT Simulation)^Term 4 (EL4102)">
+						<Link VarA="PRG_AnalogSim.arEL4102[7].Ch1" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="Channel 1^Output" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_AnalogSim.arEL4102[7].Ch2" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="Channel 2^Output" RestoreInfo="ANotFound"/>
+					</OwnerB>
+					<OwnerB Name="TIID^Device 8 (EtherCAT Simulation)^Term 4 (EL4102)">
+						<Link VarA="PRG_AnalogSim.arEL4102[8].Ch1" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="Channel 1^Output" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_AnalogSim.arEL4102[8].Ch2" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="Channel 2^Output" RestoreInfo="ANotFound"/>
+					</OwnerB>
+				</OwnerA>
+			</UnrestoredVarLinks>
 			<Contexts>
 				<Context>
 					<Id NeedCalleeCall="true">0</Id>
@@ -138,30 +126,14 @@
 			<OwnerB Name="TIID^Device 5 (EtherCAT Simulation)^Term 2 (EL5001)">
 				<Link VarA="PlcTask Outputs^PRG_EncoderSim.SimEncoderCount" VarB="SSI Inputs^Counter value"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 5 (EtherCAT Simulation)^Term 4 (EL4102)">
-				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[5].Ch1" VarB="Channel 1^Output"/>
-				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[5].Ch2" VarB="Channel 2^Output"/>
-			</OwnerB>
 			<OwnerB Name="TIID^Device 6 (EtherCAT Simulation)^Term 2 (EL5001)">
 				<Link VarA="PlcTask Outputs^PRG_EncoderSim.SimEncoderCount" VarB="SSI Inputs^Counter value"/>
-			</OwnerB>
-			<OwnerB Name="TIID^Device 6 (EtherCAT Simulation)^Term 4 (EL4102)">
-				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[6].Ch1" VarB="Channel 1^Output"/>
-				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[6].Ch2" VarB="Channel 2^Output"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 7 (EtherCAT Simulation)^Term 2 (EL5001)">
 				<Link VarA="PlcTask Outputs^PRG_EncoderSim.SimEncoderCount" VarB="SSI Inputs^Counter value"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 7 (EtherCAT Simulation)^Term 4 (EL4102)">
-				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[7].Ch1" VarB="Channel 1^Output"/>
-				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[7].Ch2" VarB="Channel 2^Output"/>
-			</OwnerB>
 			<OwnerB Name="TIID^Device 8 (EtherCAT Simulation)^Term 2 (EL5001)">
 				<Link VarA="PlcTask Outputs^PRG_EncoderSim.SimEncoderCount" VarB="SSI Inputs^Counter value"/>
-			</OwnerB>
-			<OwnerB Name="TIID^Device 8 (EtherCAT Simulation)^Term 4 (EL4102)">
-				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[8].Ch1" VarB="Channel 1^Output"/>
-				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[8].Ch2" VarB="Channel 2^Output"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Local (EtherCAT)">
 				<Link VarA="PlcTask Inputs^MAIN.LocalEtherCATDevState" VarB="Inputs^DevState"/>
