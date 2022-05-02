@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.25" ClassName="CDevEtherCATSimulationDef" SubType="144">
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.29" ClassName="CDevEtherCATSimulationDef" SubType="144" TcProjectVariant="PC1">
 	<DataTypes>
 		<DataType>
 			<Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
@@ -22,7 +22,14 @@
 	</DataTypes>
 	<Device Id="1" DevType="144" AmsPort="28673" AmsNetId="5.24.131.22.2.1" RemoteName="Device 1 (EtherCAT Simulation)">
 		<Name>__FILENAME__</Name>
-		<DevData>000000000000000000000000f40100005c4445564943455c7b39413838354145382d333538412d343630412d384338452d4644323630414135364534387d000000000000000000003132fea90000ffff0001051bd5dc010000000000000000000000000000010000000000000000000000000000000000000000000000000000</DevData>
+		<ProjectVariant PvUseDisable="true">
+			<Variant>
+				<Name>PC1</Name>
+				<Name>PC2</Name>
+				<Disable>0</Disable>
+			</Variant>
+		</ProjectVariant>
+		<DevData>000000000000000000000000f40100005c4445564943455c7b39413838354145382d333538412d343630412d384338452d4644323630414135364534387d000000000000000000003132fea90000ffff0001051bd5dc010000800000000000000000000000010000000000000000000000000000000000000000000000000000</DevData>
 		<Vars VarGrpType="1">
 			<Name>Inputs</Name>
 			<Var>

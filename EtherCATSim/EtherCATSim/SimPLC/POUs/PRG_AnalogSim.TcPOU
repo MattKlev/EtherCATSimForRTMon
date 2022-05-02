@@ -1,15 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <POU Name="PRG_AnalogSim" Id="{52cd9b03-f9ad-4b35-bfdc-bcbfe944d083}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_AnalogSim
 VAR
-	arEL4102		:ARRAY[1..NumOfEL4102] OF FB_EL4102_Sim;
+	arEL4102			:ARRAY[1..NumOfEL4102] OF FB_EL4102_Sim;
 END_VAR
 VAR CONSTANT
-	NumOfEL4102		:INT:=8;
+	{IF defined (PC1)}	
+
+		NumOfEL4102		:INT:=8;
+	{ELSIF defined (PC2)}
+		NumOfEL4102		:INT:=4;
+	{END_IF}	
 END_VAR
 VAR_TEMP
-	i				:INT;
+	i					:INT;
 END_VAR
 ]]></Declaration>
     <Implementation>

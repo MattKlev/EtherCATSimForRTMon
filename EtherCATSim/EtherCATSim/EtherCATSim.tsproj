@@ -1,21 +1,517 @@
 <?xml version="1.0"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.25">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.29" TcProjectVariant="PC1">
 	<Project ProjectGUID="{6B4513DE-E205-4122-B1DD-99BA4266BC02}" TargetNetId="5.24.131.22.1.1" Target64Bit="true" ShowHideConfigurations="#x3c7">
 		<System>
-			<Settings MaxCpus="4" NonWinCpus="2">
+			<Settings MaxCpus="4" NonWinCpus="1">
 				<Cpu CpuId="3" BaseTime="500"/>
 				<IoIdleTask CycleTime="500"/>
 			</Settings>
 			<Licenses CacheOrCheckLicensesOnStartup="true">
-				<Target>
-					<LicenseDevice DongleHardwareId="2" DongleDevice="#x71010001" DongleLevel="70" DongleSystemId="{256E8B65-A19F-8909-7280-9EA2AF0183D4}"/>
+				<Target BkhfOrder="0100083571" CustomOrder="MattK">
+					<CustomComment><![CDATA[EL6070 SN 0100083571]]></CustomComment>
+					<ManualSelect>{B639B94F-1480-4FEF-ACD2-7ACB6020AEED}</ManualSelect>
+					<ManualSelect>{F1CFF3CF-B042-45EE-A380-4FB3270F0BA5}</ManualSelect>
+					<ManualSelect>{1C20D4D8-C732-464D-AF34-6EA5D2180E06}</ManualSelect>
+					<ManualSelect>{E40D9E9D-E242-457A-9AC7-C915753AC810}</ManualSelect>
+					<ManualSelect>{6DFE338D-A25E-4F4B-A02A-2E93F21C1763}</ManualSelect>
+					<ManualSelect>{342C16A8-A110-474E-99D1-26DF22353503}</ManualSelect>
+					<ManualSelect>{C2F58FAE-EB3E-4252-A3D4-E912569E6EFC}</ManualSelect>
+					<ManualSelect>{94C38F79-AAF0-4CCB-84EB-ABEAC0FFDFFA}</ManualSelect>
+					<ManualSelect>{0CD18884-36C8-4FA7-B026-A535E5D03602}</ManualSelect>
+					<ManualSelect>{B937370F-23C1-47BE-B537-8F8FF797B168}</ManualSelect>
+					<ManualSelect>{96F8FBEB-48D6-4061-A973-35866BF21BE0}</ManualSelect>
+					<ManualSelect>{E8CE55B5-3125-49FB-B21B-4CB7A751D68B}</ManualSelect>
+					<ManualSelect>{ADDFAE21-8CFE-4AF3-9F46-29C36F985936}</ManualSelect>
+					<ManualSelect>{57BD9670-089D-434A-85CF-90A857EE0EFF}</ManualSelect>
+					<ManualSelect>{A15FA260-08A3-4DCD-93E9-5F22F7D234ED}</ManualSelect>
+					<ManualSelect>{2C358067-6E81-4F6A-B8D9-AC1F63FEB6FD}</ManualSelect>
+					<ManualSelect>{EA27E631-101B-4AF7-BEB7-EB77F65C3A57}</ManualSelect>
+					<ManualSelect>{96ADB134-211A-4863-977F-10E53B30C2D2}</ManualSelect>
+					<ManualSelect>{648F394E-7DD1-499C-8112-7C38E161A94C}</ManualSelect>
+					<ManualSelect>{466B3E5B-C981-4F63-B61F-0BBB84BD539D}</ManualSelect>
+					<ManualSelect>{5BE000FB-98CE-4B83-A754-2CB323710E14}</ManualSelect>
+					<ManualSelect>{6C4B2C28-7A9E-41AD-B5FE-6D61422A73D6}</ManualSelect>
+					<ManualSelect>{EDABAF2B-31BD-44EA-812D-3BEA277A1355}</ManualSelect>
+					<ManualSelect>{34E7B37F-BCDF-4169-BDE0-5EDE77BD1CD3}</ManualSelect>
+					<ManualSelect>{081AC839-28D0-49CA-9792-72680E1F3249}</ManualSelect>
+					<ManualSelect>{094750FD-A1AB-4B28-8DE8-8B6CACD0EDE6}</ManualSelect>
+					<ManualSelect>{AEF3F40E-35EC-44ED-93C6-ABB6861AF40A}</ManualSelect>
+					<ManualSelect>{BB40055B-8333-4223-90EA-7C4559DC7C69}</ManualSelect>
+					<ManualSelect>{CB3D4492-5E9E-43BC-AB3B-27CF3896EEC2}</ManualSelect>
+					<ManualSelect>{0070B910-0995-4F44-83BF-D1E141B4D8C3}</ManualSelect>
+					<ManualSelect>{B56E7280-5DD4-4AB8-8075-075DD69C1C3D}</ManualSelect>
+					<ManualSelect>{1C844D20-6568-4164-87F8-B6791D563CA7}</ManualSelect>
+					<ManualSelect>{FDEB49FC-E8D5-4978-96BC-06E257B23F2D}</ManualSelect>
+					<ManualSelect>{BF40BB30-6318-4AD6-A811-54CC91DDA1B2}</ManualSelect>
+					<ManualSelect>{68A05D95-13CD-491E-A0DD-DC396DC90A19}</ManualSelect>
+					<ManualSelect>{94C87B69-26C2-4677-9F7E-27E770C481BE}</ManualSelect>
+					<ManualSelect>{FDE02854-39A7-440C-9EAE-C234A16A3CED}</ManualSelect>
+					<ManualSelect>{F0A089BD-747B-4F16-B7CA-D8A8124042CD}</ManualSelect>
+					<ManualSelect>{6BCAF065-32F5-44AC-A233-31D91205AB5B}</ManualSelect>
+					<ManualSelect>{5A66BBF9-8644-450F-9F23-1B3A7DAEEAD1}</ManualSelect>
+					<ManualSelect>{BF78CFC7-2E63-42C3-8C07-BB6C346BFB8B}</ManualSelect>
+					<ManualSelect>{6560E068-08E6-4CE9-BFC8-B47975C26686}</ManualSelect>
+					<ManualSelect>{4207A273-D64C-4314-BDC9-4D7933161B91}</ManualSelect>
+					<ManualSelect>{54BC404D-F267-4F81-A7FD-9796672C1C24}</ManualSelect>
+					<ManualSelect>{4DDFE996-42CE-42BE-BB81-098BDCF9B134}</ManualSelect>
+					<ManualSelect>{26580A89-EBA6-4400-B416-C33E76066D57}</ManualSelect>
+					<ManualSelect>{461F547B-9F81-4C4D-8BE6-01F8B3B14C86}</ManualSelect>
+					<ManualSelect>{D59230D3-7C55-4138-859C-234C1C6CFDA8}</ManualSelect>
+					<ManualSelect>{4989A799-AEEA-4FEE-88EF-666B99EEFB45}</ManualSelect>
+					<ManualSelect>{4156C772-5DC6-40A9-B3F8-C3D5A097513C}</ManualSelect>
+					<ManualSelect>{927A7313-A412-4376-8911-4A8F60EC8651}</ManualSelect>
+					<ManualSelect>{B1065A48-8131-4608-A378-D67FA8BD826E}</ManualSelect>
+					<ManualSelect>{B1789D12-0D07-475E-AB14-D9BA46070956}</ManualSelect>
+					<ManualSelect>{D40F0668-7595-4E8C-B358-EDDD620990D2}</ManualSelect>
+					<ManualSelect>{304D006A-8299-4560-AB79-438534B50288}</ManualSelect>
+					<ManualSelect>{B27B051A-CA6A-42EA-833E-82CC92903D83}</ManualSelect>
+					<ManualSelect>{CCA47D7F-3A22-4852-81CD-15A045A6B646}</ManualSelect>
+					<ManualSelect>{24E29A6B-99AE-42CD-816C-1D69E1E3ADA4}</ManualSelect>
+					<ManualSelect>{18FCE643-3C14-4527-A934-A9042FF9E7DE}</ManualSelect>
+					<ManualSelect>{C13CAEC7-1F41-4491-935E-FF6254005C74}</ManualSelect>
+					<ManualSelect>{50E513D1-8A01-4858-850E-FA89F7A12AFB}</ManualSelect>
+					<ManualSelect>{42E60F0D-E1AD-4B78-84B8-FD3ECF44FAA7}</ManualSelect>
+					<ManualSelect>{4F446C45-DCB5-4893-A137-693FE185D9BD}</ManualSelect>
+					<ManualSelect>{2AC4392B-9B10-46D4-9799-F3953FFB1642}</ManualSelect>
+					<ManualSelect>{28FFAB70-2B9C-472A-AA02-7F730A9C83B9}</ManualSelect>
+					<ManualSelect>{7B9C044C-F003-44F9-8552-FA9D08753C91}</ManualSelect>
+					<ManualSelect>{8161723B-0C2E-405C-B829-EDC5DAAB5104}</ManualSelect>
+					<ManualSelect>{067D1C29-F119-431C-A681-E503451951C7}</ManualSelect>
+					<ManualSelect>{D58728E0-7762-4145-8A93-80D55E0453A6}</ManualSelect>
+					<ManualSelect>{02AC2825-C3C7-4D15-AAF6-4EB45EFAA2D0}</ManualSelect>
+					<ManualSelect>{A344D952-F848-4482-8B39-B0F02B8B7A6E}</ManualSelect>
+					<ManualSelect>{D06E108C-0E3C-48D7-A589-8961B3FC9AC0}</ManualSelect>
+					<ManualSelect>{A6DA2335-6B5A-4627-8824-0B8D5E3E73C5}</ManualSelect>
+					<ManualSelect>{7A0CF84A-530D-4F8B-8C98-33A57151C348}</ManualSelect>
+					<ManualSelect>{C04D00A1-E33D-48C9-85D4-821A99122F43}</ManualSelect>
+					<ManualSelect>{ACBFB8AA-FBCB-462F-ACD0-4E6FBC225384}</ManualSelect>
+					<ManualSelect>{0ABFD2B0-EAE1-4DC7-AABE-03093B0786B7}</ManualSelect>
+					<ManualSelect>{3B0FDF15-45F3-434A-97CE-56D8F23D9DA3}</ManualSelect>
+					<ManualSelect>{9EC3D3B9-93E3-4498-BE68-5F263E6D4C80}</ManualSelect>
+					<ManualSelect>{73C71EBD-104A-4EE6-955D-ADE86A37EFC3}</ManualSelect>
+					<ManualSelect>{2D6F11C0-6F75-4E5D-A07D-D83A5E0C9F10}</ManualSelect>
+					<ManualSelect>{796D380F-D49E-4C0C-A05F-500052FAC883}</ManualSelect>
+					<ManualSelect>{0874FC73-9646-40A4-942D-F8C71CB228AE}</ManualSelect>
+					<ManualSelect>{7637A32E-299D-4A54-9201-DA676B288A41}</ManualSelect>
+					<ManualSelect>{BDCC0070-42D5-49AE-ABF1-1D4434813D60}</ManualSelect>
+					<ManualSelect>{BCA6EE0A-9CE1-4D3F-98CA-413ABC0D94FD}</ManualSelect>
+					<ManualSelect>{92583661-35AE-45CE-BD4F-C35BFE16F07E}</ManualSelect>
+					<ManualSelect>{2A62CBE6-0999-4FCB-AF97-0676B22890FB}</ManualSelect>
+					<ManualSelect>{D33F07B5-37E9-4E1C-9D27-DB62AFB3EA50}</ManualSelect>
+					<ManualSelect>{14DB2856-1BFD-49EE-AEAB-78906DBFBEE2}</ManualSelect>
+					<ManualSelect>{AD7F40C3-F160-4413-83E3-6B7656A795A2}</ManualSelect>
+					<ManualSelect>{D0218B51-AC1D-4435-920B-252E1125DF51}</ManualSelect>
+					<ManualSelect>{C21D857D-6193-4500-8FE2-026AC427DCC4}</ManualSelect>
+					<ManualSelect>{C1126695-F4A2-4F2D-AA1A-311783D98273}</ManualSelect>
+					<ManualSelect>{EE499E71-9522-4C05-86B4-8AD0F904E0C4}</ManualSelect>
+					<ManualSelect>{2BCD4DD5-B4D5-4DD3-8B07-11FEAAD83E08}</ManualSelect>
+					<ManualSelect>{A0C635DF-5F13-43BE-8D0B-613386AD9A20}</ManualSelect>
+					<ManualSelect>{133B41A5-2827-4423-8FEB-78AF4E0C890F}</ManualSelect>
+					<ManualSelect>{1EEBBAAA-51E1-4750-9D6A-7B04116EA32B}</ManualSelect>
+					<ManualSelect>{3E823FFB-0BB3-43BA-9023-5952947C15A8}</ManualSelect>
+					<ManualSelect>{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</ManualSelect>
+					<ManualSelect>{9B75F165-D5BA-422F-A750-06BAC761E063}</ManualSelect>
+					<ManualSelect>{63AADC1C-99A9-4C65-953F-C877CAFE9DF1}</ManualSelect>
+					<ManualSelect>{05A2BB1C-6F39-46A3-BAEE-FC6B5DA5439C}</ManualSelect>
+					<ManualSelect>{F8F2DBC7-3228-4672-91A9-C5D46C32B544}</ManualSelect>
+					<ManualSelect>{9FD32FC8-0CF9-4C5B-95FB-F35423496A77}</ManualSelect>
+					<ManualSelect>{3F5F739E-20C5-4B02-9334-D87F72BD0681}</ManualSelect>
+					<ManualSelect>{AC534BD2-49E1-4025-9C78-0BC8AE4A36A9}</ManualSelect>
+					<ManualSelect>{9AA6BD77-2143-4739-8C48-B36DEAAA1790}</ManualSelect>
+					<ManualSelect>{C362DA3A-1771-4019-9AF9-F39972E4A76D}</ManualSelect>
+					<ManualSelect>{FF62EEAB-E450-4F79-A9C7-0515B82AB10C}</ManualSelect>
+					<ManualSelect>{E54E240B-6D03-43F0-BFAB-F081E16BC113}</ManualSelect>
+					<ManualSelect>{4AB869F0-145C-4EB0-878E-69BB1793E116}</ManualSelect>
+					<ManualSelect>{5002C16A-02B3-4A8C-8C5C-A65EDD0AE398}</ManualSelect>
+					<ManualSelect>{27326EE5-AB30-4084-B15B-8CCA96CCBF0B}</ManualSelect>
+					<ManualSelect>{777F1598-583B-4503-99BB-7C02E0ABD97E}</ManualSelect>
+					<ManualSelect>{DEA72F0A-9EA0-48F4-ABB5-766516202B8E}</ManualSelect>
+					<ManualSelect>{56ADDFFF-32FF-4DC7-A432-0D2D8413616A}</ManualSelect>
+					<ManualSelect>{E826F1D2-D597-42DF-8320-AB96F0199E4F}</ManualSelect>
+					<ManualSelect>{CFAADCFE-0FFE-462F-B1B3-7885B3C645D0}</ManualSelect>
+					<ManualSelect>{9A482854-2F15-4494-8EEF-A129A197D796}</ManualSelect>
+					<ManualSelect>{19E93A3D-90D1-45B9-A28A-32DD8D2A166A}</ManualSelect>
+					<ManualSelect>{7AFD0713-1333-4A3B-938C-7B9BD0418C8D}</ManualSelect>
+					<ManualSelect>{99A3CF49-FFBF-49D4-BA30-F4C0593B5161}</ManualSelect>
+					<ManualSelect>{3DA5D7CD-70F1-4894-B3AD-D35619CB19FA}</ManualSelect>
+					<ManualSelect>{EC7969FF-C0D8-41A5-9693-92BFB866A89E}</ManualSelect>
+					<ManualSelect>{1293A494-551F-4DB7-86DB-E11F826C9DD9}</ManualSelect>
+					<ManualSelect>{1601B55A-B68B-4C5B-9A42-31E9CA63F286}</ManualSelect>
+					<ManualSelect>{9456739A-73FA-4A38-91FC-2ACE923BEB21}</ManualSelect>
+					<ManualSelect>{CCE4FF6F-8342-4DB6-A976-37835E17161A}</ManualSelect>
+					<ManualSelect>{6B1A1BEA-F718-479D-ADC8-E6B9258E9F17}</ManualSelect>
+					<ManualSelect>{FB6D691D-478A-4C62-9D57-8A3A1727A76B}</ManualSelect>
+					<ManualSelect>{30E1B725-FC70-477D-8424-CD37BC667785}</ManualSelect>
+					<ManualSelect>{DF0BE04C-8046-438C-ACE8-E14C5E082104}</ManualSelect>
+					<ManualSelect>{09A4FC78-6C69-4C47-8C8B-D1115130828F}</ManualSelect>
+					<ManualSelect>{5762C59F-F838-4092-B24F-4E469453D3E9}</ManualSelect>
+					<ManualSelect>{073CC9F3-87A6-43CF-A970-3EF2EDAD627C}</ManualSelect>
+					<ManualSelect>{88FA6DAB-09EF-464E-A413-EE4B97F3F185}</ManualSelect>
+					<ManualSelect>{7561ACC6-B225-4960-A93E-395C788D9597}</ManualSelect>
+					<ManualSelect>{D3BAA5E2-D7DF-46FC-B537-C52A686A73FF}</ManualSelect>
+					<ManualSelect>{2F2AA838-26BB-4435-83FD-B4EB6CBB0C6C}</ManualSelect>
+					<ManualSelect>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</ManualSelect>
+					<ManualSelect>{2149932B-0B77-4004-B43F-E85CEEFF347D}</ManualSelect>
+					<ManualSelect>{65C77515-1C63-44D0-B1C5-CAFA820ADD41}</ManualSelect>
+					<ManualSelect>{2752D285-16AD-4E89-AE6C-80E72784D264}</ManualSelect>
+					<ManualSelect>{2D2E5D68-23A1-4B53-BDF7-41C3861F6DB7}</ManualSelect>
+					<ManualSelect>{3DDCAB25-BF0E-412C-A721-DC77C1B8099C}</ManualSelect>
+					<ManualSelect>{7371CC89-F21A-4584-994B-8B112F6EB1A0}</ManualSelect>
+					<ManualSelect>{FBEA583E-F05B-406A-BD9F-2BFA59244888}</ManualSelect>
+					<ManualSelect>{D6854388-0494-4832-9169-8003C437CBA5}</ManualSelect>
+					<ManualSelect>{C7C2EEE2-23C9-47B9-82D4-0ADF5D82C0A0}</ManualSelect>
+					<ManualSelect>{2AFA4536-55C8-4554-BE9D-FAF0C7E2EFC3}</ManualSelect>
+					<ManualSelect>{F67A40BA-A354-4FFA-9F33-E1162C93EB6E}</ManualSelect>
+					<ManualSelect>{8C57D0A8-BD63-4554-BAE1-E9C797EF0D0E}</ManualSelect>
+					<ManualSelect>{FF7D97E4-982F-4ABD-87CE-19164A0571CA}</ManualSelect>
+					<ManualSelect>{97127BE5-AB00-4872-8A0E-0120D605FA10}</ManualSelect>
+					<ManualSelect>{BB7AE665-A8D6-41F6-954F-961DDDCDA42B}</ManualSelect>
+					<ManualSelect>{21C146FF-61EE-4911-969B-61339FE7DB69}</ManualSelect>
+					<ManualSelect>{6425CC43-74BE-40EB-B459-8349B5AB98BD}</ManualSelect>
+					<ManualSelect>{520DE751-9DB6-47CB-8240-BD5C466E7E64}</ManualSelect>
+					<ManualSelect>{C0BF0BC1-CBED-4D55-86DC-0706BF289DCE}</ManualSelect>
+					<ManualSelect>{5F80BDB9-D9AC-40A4-9C8A-62EE6295DE0F}</ManualSelect>
+					<ManualSelect>{6F53AC28-F6A2-47FE-89A6-F2AB8FE337D2}</ManualSelect>
+					<ManualSelect>{352C9D05-CA12-4E54-B55A-575B64624E9C}</ManualSelect>
+					<ManualSelect>{E008E3C8-6BD9-491C-B673-DC45CC7AA4F1}</ManualSelect>
+					<ManualSelect>{740BD5CC-57C2-46E1-B4F7-146749714343}</ManualSelect>
+					<ManualSelect>{A1AF8A04-C08D-4853-A5A0-0E6C3A278A8C}</ManualSelect>
+					<ManualSelect>{B86A5E22-F738-4626-A9AA-59E7FA9884B3}</ManualSelect>
+					<ManualSelect>{AECBCEB9-4222-4369-8961-4A7488DAE203}</ManualSelect>
+					<TargetSelect TargetId="2">{0CD18884-36C8-4FA7-B026-A535E5D03602}</TargetSelect>
+					<TargetSelect TargetId="2">{94C38F79-AAF0-4CCB-84EB-ABEAC0FFDFFA}</TargetSelect>
+					<TargetSelect TargetId="2">{342C16A8-A110-474E-99D1-26DF22353503}</TargetSelect>
+					<TargetSelect TargetId="2">{6DFE338D-A25E-4F4B-A02A-2E93F21C1763}</TargetSelect>
+					<TargetSelect TargetId="2">{E40D9E9D-E242-457A-9AC7-C915753AC810}</TargetSelect>
+					<TargetSelect TargetId="2">{1C20D4D8-C732-464D-AF34-6EA5D2180E06}</TargetSelect>
+					<TargetSelect TargetId="2">{F1CFF3CF-B042-45EE-A380-4FB3270F0BA5}</TargetSelect>
+					<TargetSelect TargetId="2">{B639B94F-1480-4FEF-ACD2-7ACB6020AEED}</TargetSelect>
+					<TargetSelect TargetId="2">{94C91BCC-DC1F-4EBC-AEFD-2DC25DF4708B}</TargetSelect>
+					<TargetSelect TargetId="2">{EA27E631-101B-4AF7-BEB7-EB77F65C3A57}</TargetSelect>
+					<TargetSelect TargetId="2">{2C358067-6E81-4F6A-B8D9-AC1F63FEB6FD}</TargetSelect>
+					<TargetSelect TargetId="2">{A15FA260-08A3-4DCD-93E9-5F22F7D234ED}</TargetSelect>
+					<TargetSelect TargetId="2">{ADDFAE21-8CFE-4AF3-9F46-29C36F985936}</TargetSelect>
+					<TargetSelect TargetId="2">{E8CE55B5-3125-49FB-B21B-4CB7A751D68B}</TargetSelect>
+					<TargetSelect TargetId="2">{96F8FBEB-48D6-4061-A973-35866BF21BE0}</TargetSelect>
+					<TargetSelect TargetId="2">{B937370F-23C1-47BE-B537-8F8FF797B168}</TargetSelect>
+					<TargetSelect TargetId="2">{094750FD-A1AB-4B28-8DE8-8B6CACD0EDE6}</TargetSelect>
+					<TargetSelect TargetId="2">{34E7B37F-BCDF-4169-BDE0-5EDE77BD1CD3}</TargetSelect>
+					<TargetSelect TargetId="2">{6C4B2C28-7A9E-41AD-B5FE-6D61422A73D6}</TargetSelect>
+					<TargetSelect TargetId="2">{5BE000FB-98CE-4B83-A754-2CB323710E14}</TargetSelect>
+					<TargetSelect TargetId="2">{466B3E5B-C981-4F63-B61F-0BBB84BD539D}</TargetSelect>
+					<TargetSelect TargetId="2">{96ADB134-211A-4863-977F-10E53B30C2D2}</TargetSelect>
+					<TargetSelect TargetId="2">{BF40BB30-6318-4AD6-A811-54CC91DDA1B2}</TargetSelect>
+					<TargetSelect TargetId="2">{FDEB49FC-E8D5-4978-96BC-06E257B23F2D}</TargetSelect>
+					<TargetSelect TargetId="2">{1C844D20-6568-4164-87F8-B6791D563CA7}</TargetSelect>
+					<TargetSelect TargetId="2">{0070B910-0995-4F44-83BF-D1E141B4D8C3}</TargetSelect>
+					<TargetSelect TargetId="2">{CB3D4492-5E9E-43BC-AB3B-27CF3896EEC2}</TargetSelect>
+					<TargetSelect TargetId="2">{BB40055B-8333-4223-90EA-7C4559DC7C69}</TargetSelect>
+					<TargetSelect TargetId="2">{26580A89-EBA6-4400-B416-C33E76066D57}</TargetSelect>
+					<TargetSelect TargetId="2">{4DDFE996-42CE-42BE-BB81-098BDCF9B134}</TargetSelect>
+					<TargetSelect TargetId="2">{54BC404D-F267-4F81-A7FD-9796672C1C24}</TargetSelect>
+					<TargetSelect TargetId="2">{4207A273-D64C-4314-BDC9-4D7933161B91}</TargetSelect>
+					<TargetSelect TargetId="2">{6560E068-08E6-4CE9-BFC8-B47975C26686}</TargetSelect>
+					<TargetSelect TargetId="2">{BF78CFC7-2E63-42C3-8C07-BB6C346BFB8B}</TargetSelect>
+					<TargetSelect TargetId="2">{5A66BBF9-8644-450F-9F23-1B3A7DAEEAD1}</TargetSelect>
+					<TargetSelect TargetId="2">{6BCAF065-32F5-44AC-A233-31D91205AB5B}</TargetSelect>
+					<TargetSelect TargetId="2">{FDE02854-39A7-440C-9EAE-C234A16A3CED}</TargetSelect>
+					<TargetSelect TargetId="2">{F0A089BD-747B-4F16-B7CA-D8A8124042CD}</TargetSelect>
+					<TargetSelect TargetId="2">{94C87B69-26C2-4677-9F7E-27E770C481BE}</TargetSelect>
+					<TargetSelect TargetId="2">{68A05D95-13CD-491E-A0DD-DC396DC90A19}</TargetSelect>
+					<TargetSelect TargetId="2">{D40F0668-7595-4E8C-B358-EDDD620990D2}</TargetSelect>
+					<TargetSelect TargetId="2">{B1789D12-0D07-475E-AB14-D9BA46070956}</TargetSelect>
+					<TargetSelect TargetId="2">{B1065A48-8131-4608-A378-D67FA8BD826E}</TargetSelect>
+					<TargetSelect TargetId="2">{927A7313-A412-4376-8911-4A8F60EC8651}</TargetSelect>
+					<TargetSelect TargetId="2">{4156C772-5DC6-40A9-B3F8-C3D5A097513C}</TargetSelect>
+					<TargetSelect TargetId="2">{D59230D3-7C55-4138-859C-234C1C6CFDA8}</TargetSelect>
+					<TargetSelect TargetId="2">{2AC4392B-9B10-46D4-9799-F3953FFB1642}</TargetSelect>
+					<TargetSelect TargetId="2">{28FFAB70-2B9C-472A-AA02-7F730A9C83B9}</TargetSelect>
+					<TargetSelect TargetId="2">{4F446C45-DCB5-4893-A137-693FE185D9BD}</TargetSelect>
+					<TargetSelect TargetId="2">{50E513D1-8A01-4858-850E-FA89F7A12AFB}</TargetSelect>
+					<TargetSelect TargetId="2">{18FCE643-3C14-4527-A934-A9042FF9E7DE}</TargetSelect>
+					<TargetSelect TargetId="2">{24E29A6B-99AE-42CD-816C-1D69E1E3ADA4}</TargetSelect>
+					<TargetSelect TargetId="2">{CCA47D7F-3A22-4852-81CD-15A045A6B646}</TargetSelect>
+					<TargetSelect TargetId="2">{B27B051A-CA6A-42EA-833E-82CC92903D83}</TargetSelect>
+					<TargetSelect TargetId="2">{9EC3D3B9-93E3-4498-BE68-5F263E6D4C80}</TargetSelect>
+					<TargetSelect TargetId="2">{3B0FDF15-45F3-434A-97CE-56D8F23D9DA3}</TargetSelect>
+					<TargetSelect TargetId="2">{ACBFB8AA-FBCB-462F-ACD0-4E6FBC225384}</TargetSelect>
+					<TargetSelect TargetId="2">{C04D00A1-E33D-48C9-85D4-821A99122F43}</TargetSelect>
+					<TargetSelect TargetId="2">{7A0CF84A-530D-4F8B-8C98-33A57151C348}</TargetSelect>
+					<TargetSelect TargetId="2">{D06E108C-0E3C-48D7-A589-8961B3FC9AC0}</TargetSelect>
+					<TargetSelect TargetId="2">{A344D952-F848-4482-8B39-B0F02B8B7A6E}</TargetSelect>
+					<TargetSelect TargetId="2">{02AC2825-C3C7-4D15-AAF6-4EB45EFAA2D0}</TargetSelect>
+					<TargetSelect TargetId="2">{067D1C29-F119-431C-A681-E503451951C7}</TargetSelect>
+					<TargetSelect TargetId="2">{8161723B-0C2E-405C-B829-EDC5DAAB5104}</TargetSelect>
+					<TargetSelect TargetId="2">{7B9C044C-F003-44F9-8552-FA9D08753C91}</TargetSelect>
+					<TargetSelect TargetId="2">{14DB2856-1BFD-49EE-AEAB-78906DBFBEE2}</TargetSelect>
+					<TargetSelect TargetId="2">{D33F07B5-37E9-4E1C-9D27-DB62AFB3EA50}</TargetSelect>
+					<TargetSelect TargetId="2">{2A62CBE6-0999-4FCB-AF97-0676B22890FB}</TargetSelect>
+					<TargetSelect TargetId="2">{92583661-35AE-45CE-BD4F-C35BFE16F07E}</TargetSelect>
+					<TargetSelect TargetId="2">{BDCC0070-42D5-49AE-ABF1-1D4434813D60}</TargetSelect>
+					<TargetSelect TargetId="2">{7637A32E-299D-4A54-9201-DA676B288A41}</TargetSelect>
+					<TargetSelect TargetId="2">{0874FC73-9646-40A4-942D-F8C71CB228AE}</TargetSelect>
+					<TargetSelect TargetId="2">{73C71EBD-104A-4EE6-955D-ADE86A37EFC3}</TargetSelect>
+					<TargetSelect TargetId="2">{05A2BB1C-6F39-46A3-BAEE-FC6B5DA5439C}</TargetSelect>
+					<TargetSelect TargetId="2">{63AADC1C-99A9-4C65-953F-C877CAFE9DF1}</TargetSelect>
+					<TargetSelect TargetId="2">{9B75F165-D5BA-422F-A750-06BAC761E063}</TargetSelect>
+					<TargetSelect TargetId="2">{3E823FFB-0BB3-43BA-9023-5952947C15A8}</TargetSelect>
+					<TargetSelect TargetId="2">{1EEBBAAA-51E1-4750-9D6A-7B04116EA32B}</TargetSelect>
+					<TargetSelect TargetId="2">{133B41A5-2827-4423-8FEB-78AF4E0C890F}</TargetSelect>
+					<TargetSelect TargetId="2">{2BCD4DD5-B4D5-4DD3-8B07-11FEAAD83E08}</TargetSelect>
+					<TargetSelect TargetId="2">{EE499E71-9522-4C05-86B4-8AD0F904E0C4}</TargetSelect>
+					<TargetSelect TargetId="2">{C1126695-F4A2-4F2D-AA1A-311783D98273}</TargetSelect>
+					<TargetSelect TargetId="2">{C21D857D-6193-4500-8FE2-026AC427DCC4}</TargetSelect>
+					<TargetSelect TargetId="2">{D0218B51-AC1D-4435-920B-252E1125DF51}</TargetSelect>
+					<TargetSelect TargetId="2">{E54E240B-6D03-43F0-BFAB-F081E16BC113}</TargetSelect>
+					<TargetSelect TargetId="2">{FF62EEAB-E450-4F79-A9C7-0515B82AB10C}</TargetSelect>
+					<TargetSelect TargetId="2">{C362DA3A-1771-4019-9AF9-F39972E4A76D}</TargetSelect>
+					<TargetSelect TargetId="2">{9AA6BD77-2143-4739-8C48-B36DEAAA1790}</TargetSelect>
+					<TargetSelect TargetId="2">{AC534BD2-49E1-4025-9C78-0BC8AE4A36A9}</TargetSelect>
+					<TargetSelect TargetId="2">{3F5F739E-20C5-4B02-9334-D87F72BD0681}</TargetSelect>
+					<TargetSelect TargetId="2">{9FD32FC8-0CF9-4C5B-95FB-F35423496A77}</TargetSelect>
+					<TargetSelect TargetId="2">{F8F2DBC7-3228-4672-91A9-C5D46C32B544}</TargetSelect>
+					<TargetSelect TargetId="2">{CFAADCFE-0FFE-462F-B1B3-7885B3C645D0}</TargetSelect>
+					<TargetSelect TargetId="2">{9A482854-2F15-4494-8EEF-A129A197D796}</TargetSelect>
+					<TargetSelect TargetId="2">{E826F1D2-D597-42DF-8320-AB96F0199E4F}</TargetSelect>
+					<TargetSelect TargetId="2">{5002C16A-02B3-4A8C-8C5C-A65EDD0AE398}</TargetSelect>
+					<TargetSelect TargetId="2">{4AB869F0-145C-4EB0-878E-69BB1793E116}</TargetSelect>
+					<TargetSelect TargetId="2">{CCE4FF6F-8342-4DB6-A976-37835E17161A}</TargetSelect>
+					<TargetSelect TargetId="2">{9456739A-73FA-4A38-91FC-2ACE923BEB21}</TargetSelect>
+					<TargetSelect TargetId="2">{1601B55A-B68B-4C5B-9A42-31E9CA63F286}</TargetSelect>
+					<TargetSelect TargetId="2">{1293A494-551F-4DB7-86DB-E11F826C9DD9}</TargetSelect>
+					<TargetSelect TargetId="2">{EC7969FF-C0D8-41A5-9693-92BFB866A89E}</TargetSelect>
+					<TargetSelect TargetId="2">{3DA5D7CD-70F1-4894-B3AD-D35619CB19FA}</TargetSelect>
+					<TargetSelect TargetId="2">{99A3CF49-FFBF-49D4-BA30-F4C0593B5161}</TargetSelect>
+					<TargetSelect TargetId="2">{7AFD0713-1333-4A3B-938C-7B9BD0418C8D}</TargetSelect>
+					<TargetSelect TargetId="2">{19E93A3D-90D1-45B9-A28A-32DD8D2A166A}</TargetSelect>
+					<TargetSelect TargetId="2">{5762C59F-F838-4092-B24F-4E469453D3E9}</TargetSelect>
+					<TargetSelect TargetId="2">{09A4FC78-6C69-4C47-8C8B-D1115130828F}</TargetSelect>
+					<TargetSelect TargetId="2">{DF0BE04C-8046-438C-ACE8-E14C5E082104}</TargetSelect>
+					<TargetSelect TargetId="2">{30E1B725-FC70-477D-8424-CD37BC667785}</TargetSelect>
+					<TargetSelect TargetId="2">{FB6D691D-478A-4C62-9D57-8A3A1727A76B}</TargetSelect>
+					<TargetSelect TargetId="2">{6B1A1BEA-F718-479D-ADC8-E6B9258E9F17}</TargetSelect>
+					<TargetSelect TargetId="2">{2149932B-0B77-4004-B43F-E85CEEFF347D}</TargetSelect>
+					<TargetSelect TargetId="2">{6952449D-F68C-49A2-ADE4-8639D85B33A4}</TargetSelect>
+					<TargetSelect TargetId="2">{2F2AA838-26BB-4435-83FD-B4EB6CBB0C6C}</TargetSelect>
+					<TargetSelect TargetId="2">{D3BAA5E2-D7DF-46FC-B537-C52A686A73FF}</TargetSelect>
+					<TargetSelect TargetId="2">{7561ACC6-B225-4960-A93E-395C788D9597}</TargetSelect>
+					<TargetSelect TargetId="2">{88FA6DAB-09EF-464E-A413-EE4B97F3F185}</TargetSelect>
+					<TargetSelect TargetId="2">{073CC9F3-87A6-43CF-A970-3EF2EDAD627C}</TargetSelect>
+					<TargetSelect TargetId="2">{F67A40BA-A354-4FFA-9F33-E1162C93EB6E}</TargetSelect>
+					<TargetSelect TargetId="2">{2AFA4536-55C8-4554-BE9D-FAF0C7E2EFC3}</TargetSelect>
+					<TargetSelect TargetId="2">{D6854388-0494-4832-9169-8003C437CBA5}</TargetSelect>
+					<TargetSelect TargetId="2">{FBEA583E-F05B-406A-BD9F-2BFA59244888}</TargetSelect>
+					<TargetSelect TargetId="2">{2D2E5D68-23A1-4B53-BDF7-41C3861F6DB7}</TargetSelect>
+					<TargetSelect TargetId="2">{2752D285-16AD-4E89-AE6C-80E72784D264}</TargetSelect>
+					<TargetSelect TargetId="2">{65C77515-1C63-44D0-B1C5-CAFA820ADD41}</TargetSelect>
+					<TargetSelect TargetId="2">{AECBCEB9-4222-4369-8961-4A7488DAE203}</TargetSelect>
+					<TargetSelect TargetId="2">{B86A5E22-F738-4626-A9AA-59E7FA9884B3}</TargetSelect>
+					<TargetSelect TargetId="2">{A1AF8A04-C08D-4853-A5A0-0E6C3A278A8C}</TargetSelect>
+					<TargetSelect TargetId="2">{740BD5CC-57C2-46E1-B4F7-146749714343}</TargetSelect>
+					<TargetSelect TargetId="2">{E008E3C8-6BD9-491C-B673-DC45CC7AA4F1}</TargetSelect>
+					<TargetSelect TargetId="2">{352C9D05-CA12-4E54-B55A-575B64624E9C}</TargetSelect>
+					<TargetSelect TargetId="2">{6F53AC28-F6A2-47FE-89A6-F2AB8FE337D2}</TargetSelect>
+					<TargetSelect TargetId="2">{21C146FF-61EE-4911-969B-61339FE7DB69}</TargetSelect>
+					<TargetSelect TargetId="2">{97127BE5-AB00-4872-8A0E-0120D605FA10}</TargetSelect>
+					<TargetSelect TargetId="2">{FF7D97E4-982F-4ABD-87CE-19164A0571CA}</TargetSelect>
+					<TargetSelect TargetId="2">{8C57D0A8-BD63-4554-BAE1-E9C797EF0D0E}</TargetSelect>
+					<LicenseDevice DongleHardwareId="2" DongleDevice="#x0302001a" DongleLevel="94" DongleSystemId="{82376F4B-5229-3C18-DC11-3EB46A151857}" DongleSerialNumber="0100083571"/>
 				</Target>
+				<ProjectVariant PvUseParameter="true">
+					<Variant>
+						<Name>PC1</Name>
+						<Name>PC2</Name>
+						<Parameters>
+							<ManualSelect>
+								<Lic>{0CD18884-36C8-4FA7-B026-A535E5D03602}</Lic>
+								<Lic>{94C38F79-AAF0-4CCB-84EB-ABEAC0FFDFFA}</Lic>
+								<Lic>{C2F58FAE-EB3E-4252-A3D4-E912569E6EFC}</Lic>
+								<Lic>{342C16A8-A110-474E-99D1-26DF22353503}</Lic>
+								<Lic>{6DFE338D-A25E-4F4B-A02A-2E93F21C1763}</Lic>
+								<Lic>{E40D9E9D-E242-457A-9AC7-C915753AC810}</Lic>
+								<Lic>{1C20D4D8-C732-464D-AF34-6EA5D2180E06}</Lic>
+								<Lic>{F1CFF3CF-B042-45EE-A380-4FB3270F0BA5}</Lic>
+								<Lic>{B639B94F-1480-4FEF-ACD2-7ACB6020AEED}</Lic>
+								<Lic>{EA27E631-101B-4AF7-BEB7-EB77F65C3A57}</Lic>
+								<Lic>{2C358067-6E81-4F6A-B8D9-AC1F63FEB6FD}</Lic>
+								<Lic>{A15FA260-08A3-4DCD-93E9-5F22F7D234ED}</Lic>
+								<Lic>{57BD9670-089D-434A-85CF-90A857EE0EFF}</Lic>
+								<Lic>{ADDFAE21-8CFE-4AF3-9F46-29C36F985936}</Lic>
+								<Lic>{E8CE55B5-3125-49FB-B21B-4CB7A751D68B}</Lic>
+								<Lic>{96F8FBEB-48D6-4061-A973-35866BF21BE0}</Lic>
+								<Lic>{B937370F-23C1-47BE-B537-8F8FF797B168}</Lic>
+								<Lic>{AEF3F40E-35EC-44ED-93C6-ABB6861AF40A}</Lic>
+								<Lic>{094750FD-A1AB-4B28-8DE8-8B6CACD0EDE6}</Lic>
+								<Lic>{081AC839-28D0-49CA-9792-72680E1F3249}</Lic>
+								<Lic>{34E7B37F-BCDF-4169-BDE0-5EDE77BD1CD3}</Lic>
+								<Lic>{EDABAF2B-31BD-44EA-812D-3BEA277A1355}</Lic>
+								<Lic>{6C4B2C28-7A9E-41AD-B5FE-6D61422A73D6}</Lic>
+								<Lic>{5BE000FB-98CE-4B83-A754-2CB323710E14}</Lic>
+								<Lic>{466B3E5B-C981-4F63-B61F-0BBB84BD539D}</Lic>
+								<Lic>{648F394E-7DD1-499C-8112-7C38E161A94C}</Lic>
+								<Lic>{96ADB134-211A-4863-977F-10E53B30C2D2}</Lic>
+								<Lic>{BF40BB30-6318-4AD6-A811-54CC91DDA1B2}</Lic>
+								<Lic>{FDEB49FC-E8D5-4978-96BC-06E257B23F2D}</Lic>
+								<Lic>{1C844D20-6568-4164-87F8-B6791D563CA7}</Lic>
+								<Lic>{B56E7280-5DD4-4AB8-8075-075DD69C1C3D}</Lic>
+								<Lic>{0070B910-0995-4F44-83BF-D1E141B4D8C3}</Lic>
+								<Lic>{CB3D4492-5E9E-43BC-AB3B-27CF3896EEC2}</Lic>
+								<Lic>{BB40055B-8333-4223-90EA-7C4559DC7C69}</Lic>
+								<Lic>{461F547B-9F81-4C4D-8BE6-01F8B3B14C86}</Lic>
+								<Lic>{26580A89-EBA6-4400-B416-C33E76066D57}</Lic>
+								<Lic>{4DDFE996-42CE-42BE-BB81-098BDCF9B134}</Lic>
+								<Lic>{54BC404D-F267-4F81-A7FD-9796672C1C24}</Lic>
+								<Lic>{4207A273-D64C-4314-BDC9-4D7933161B91}</Lic>
+								<Lic>{6560E068-08E6-4CE9-BFC8-B47975C26686}</Lic>
+								<Lic>{BF78CFC7-2E63-42C3-8C07-BB6C346BFB8B}</Lic>
+								<Lic>{5A66BBF9-8644-450F-9F23-1B3A7DAEEAD1}</Lic>
+								<Lic>{6BCAF065-32F5-44AC-A233-31D91205AB5B}</Lic>
+								<Lic>{F0A089BD-747B-4F16-B7CA-D8A8124042CD}</Lic>
+								<Lic>{FDE02854-39A7-440C-9EAE-C234A16A3CED}</Lic>
+								<Lic>{94C87B69-26C2-4677-9F7E-27E770C481BE}</Lic>
+								<Lic>{68A05D95-13CD-491E-A0DD-DC396DC90A19}</Lic>
+								<Lic>{D40F0668-7595-4E8C-B358-EDDD620990D2}</Lic>
+								<Lic>{B1789D12-0D07-475E-AB14-D9BA46070956}</Lic>
+								<Lic>{B1065A48-8131-4608-A378-D67FA8BD826E}</Lic>
+								<Lic>{927A7313-A412-4376-8911-4A8F60EC8651}</Lic>
+								<Lic>{4156C772-5DC6-40A9-B3F8-C3D5A097513C}</Lic>
+								<Lic>{4989A799-AEEA-4FEE-88EF-666B99EEFB45}</Lic>
+								<Lic>{D59230D3-7C55-4138-859C-234C1C6CFDA8}</Lic>
+								<Lic>{28FFAB70-2B9C-472A-AA02-7F730A9C83B9}</Lic>
+								<Lic>{2AC4392B-9B10-46D4-9799-F3953FFB1642}</Lic>
+								<Lic>{4F446C45-DCB5-4893-A137-693FE185D9BD}</Lic>
+								<Lic>{42E60F0D-E1AD-4B78-84B8-FD3ECF44FAA7}</Lic>
+								<Lic>{50E513D1-8A01-4858-850E-FA89F7A12AFB}</Lic>
+								<Lic>{C13CAEC7-1F41-4491-935E-FF6254005C74}</Lic>
+								<Lic>{18FCE643-3C14-4527-A934-A9042FF9E7DE}</Lic>
+								<Lic>{24E29A6B-99AE-42CD-816C-1D69E1E3ADA4}</Lic>
+								<Lic>{CCA47D7F-3A22-4852-81CD-15A045A6B646}</Lic>
+								<Lic>{B27B051A-CA6A-42EA-833E-82CC92903D83}</Lic>
+								<Lic>{304D006A-8299-4560-AB79-438534B50288}</Lic>
+								<Lic>{9EC3D3B9-93E3-4498-BE68-5F263E6D4C80}</Lic>
+								<Lic>{3B0FDF15-45F3-434A-97CE-56D8F23D9DA3}</Lic>
+								<Lic>{0ABFD2B0-EAE1-4DC7-AABE-03093B0786B7}</Lic>
+								<Lic>{ACBFB8AA-FBCB-462F-ACD0-4E6FBC225384}</Lic>
+								<Lic>{C04D00A1-E33D-48C9-85D4-821A99122F43}</Lic>
+								<Lic>{7A0CF84A-530D-4F8B-8C98-33A57151C348}</Lic>
+								<Lic>{A6DA2335-6B5A-4627-8824-0B8D5E3E73C5}</Lic>
+								<Lic>{D06E108C-0E3C-48D7-A589-8961B3FC9AC0}</Lic>
+								<Lic>{A344D952-F848-4482-8B39-B0F02B8B7A6E}</Lic>
+								<Lic>{02AC2825-C3C7-4D15-AAF6-4EB45EFAA2D0}</Lic>
+								<Lic>{D58728E0-7762-4145-8A93-80D55E0453A6}</Lic>
+								<Lic>{067D1C29-F119-431C-A681-E503451951C7}</Lic>
+								<Lic>{8161723B-0C2E-405C-B829-EDC5DAAB5104}</Lic>
+								<Lic>{7B9C044C-F003-44F9-8552-FA9D08753C91}</Lic>
+								<Lic>{14DB2856-1BFD-49EE-AEAB-78906DBFBEE2}</Lic>
+								<Lic>{D33F07B5-37E9-4E1C-9D27-DB62AFB3EA50}</Lic>
+								<Lic>{2A62CBE6-0999-4FCB-AF97-0676B22890FB}</Lic>
+								<Lic>{92583661-35AE-45CE-BD4F-C35BFE16F07E}</Lic>
+								<Lic>{BCA6EE0A-9CE1-4D3F-98CA-413ABC0D94FD}</Lic>
+								<Lic>{BDCC0070-42D5-49AE-ABF1-1D4434813D60}</Lic>
+								<Lic>{7637A32E-299D-4A54-9201-DA676B288A41}</Lic>
+								<Lic>{0874FC73-9646-40A4-942D-F8C71CB228AE}</Lic>
+								<Lic>{796D380F-D49E-4C0C-A05F-500052FAC883}</Lic>
+								<Lic>{2D6F11C0-6F75-4E5D-A07D-D83A5E0C9F10}</Lic>
+								<Lic>{73C71EBD-104A-4EE6-955D-ADE86A37EFC3}</Lic>
+								<Lic>{05A2BB1C-6F39-46A3-BAEE-FC6B5DA5439C}</Lic>
+								<Lic>{63AADC1C-99A9-4C65-953F-C877CAFE9DF1}</Lic>
+								<Lic>{9B75F165-D5BA-422F-A750-06BAC761E063}</Lic>
+								<Lic>{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</Lic>
+								<Lic>{3E823FFB-0BB3-43BA-9023-5952947C15A8}</Lic>
+								<Lic>{1EEBBAAA-51E1-4750-9D6A-7B04116EA32B}</Lic>
+								<Lic>{133B41A5-2827-4423-8FEB-78AF4E0C890F}</Lic>
+								<Lic>{A0C635DF-5F13-43BE-8D0B-613386AD9A20}</Lic>
+								<Lic>{2BCD4DD5-B4D5-4DD3-8B07-11FEAAD83E08}</Lic>
+								<Lic>{EE499E71-9522-4C05-86B4-8AD0F904E0C4}</Lic>
+								<Lic>{C1126695-F4A2-4F2D-AA1A-311783D98273}</Lic>
+								<Lic>{C21D857D-6193-4500-8FE2-026AC427DCC4}</Lic>
+								<Lic>{D0218B51-AC1D-4435-920B-252E1125DF51}</Lic>
+								<Lic>{AD7F40C3-F160-4413-83E3-6B7656A795A2}</Lic>
+								<Lic>{E54E240B-6D03-43F0-BFAB-F081E16BC113}</Lic>
+								<Lic>{FF62EEAB-E450-4F79-A9C7-0515B82AB10C}</Lic>
+								<Lic>{C362DA3A-1771-4019-9AF9-F39972E4A76D}</Lic>
+								<Lic>{9AA6BD77-2143-4739-8C48-B36DEAAA1790}</Lic>
+								<Lic>{AC534BD2-49E1-4025-9C78-0BC8AE4A36A9}</Lic>
+								<Lic>{3F5F739E-20C5-4B02-9334-D87F72BD0681}</Lic>
+								<Lic>{9FD32FC8-0CF9-4C5B-95FB-F35423496A77}</Lic>
+								<Lic>{F8F2DBC7-3228-4672-91A9-C5D46C32B544}</Lic>
+								<Lic>{9A482854-2F15-4494-8EEF-A129A197D796}</Lic>
+								<Lic>{CFAADCFE-0FFE-462F-B1B3-7885B3C645D0}</Lic>
+								<Lic>{E826F1D2-D597-42DF-8320-AB96F0199E4F}</Lic>
+								<Lic>{56ADDFFF-32FF-4DC7-A432-0D2D8413616A}</Lic>
+								<Lic>{DEA72F0A-9EA0-48F4-ABB5-766516202B8E}</Lic>
+								<Lic>{777F1598-583B-4503-99BB-7C02E0ABD97E}</Lic>
+								<Lic>{27326EE5-AB30-4084-B15B-8CCA96CCBF0B}</Lic>
+								<Lic>{5002C16A-02B3-4A8C-8C5C-A65EDD0AE398}</Lic>
+								<Lic>{4AB869F0-145C-4EB0-878E-69BB1793E116}</Lic>
+								<Lic>{CCE4FF6F-8342-4DB6-A976-37835E17161A}</Lic>
+								<Lic>{9456739A-73FA-4A38-91FC-2ACE923BEB21}</Lic>
+								<Lic>{1601B55A-B68B-4C5B-9A42-31E9CA63F286}</Lic>
+								<Lic>{1293A494-551F-4DB7-86DB-E11F826C9DD9}</Lic>
+								<Lic>{EC7969FF-C0D8-41A5-9693-92BFB866A89E}</Lic>
+								<Lic>{3DA5D7CD-70F1-4894-B3AD-D35619CB19FA}</Lic>
+								<Lic>{99A3CF49-FFBF-49D4-BA30-F4C0593B5161}</Lic>
+								<Lic>{7AFD0713-1333-4A3B-938C-7B9BD0418C8D}</Lic>
+								<Lic>{19E93A3D-90D1-45B9-A28A-32DD8D2A166A}</Lic>
+								<Lic>{5762C59F-F838-4092-B24F-4E469453D3E9}</Lic>
+								<Lic>{09A4FC78-6C69-4C47-8C8B-D1115130828F}</Lic>
+								<Lic>{DF0BE04C-8046-438C-ACE8-E14C5E082104}</Lic>
+								<Lic>{30E1B725-FC70-477D-8424-CD37BC667785}</Lic>
+								<Lic>{FB6D691D-478A-4C62-9D57-8A3A1727A76B}</Lic>
+								<Lic>{6B1A1BEA-F718-479D-ADC8-E6B9258E9F17}</Lic>
+								<Lic>{2149932B-0B77-4004-B43F-E85CEEFF347D}</Lic>
+								<Lic>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</Lic>
+								<Lic>{2F2AA838-26BB-4435-83FD-B4EB6CBB0C6C}</Lic>
+								<Lic>{D3BAA5E2-D7DF-46FC-B537-C52A686A73FF}</Lic>
+								<Lic>{7561ACC6-B225-4960-A93E-395C788D9597}</Lic>
+								<Lic>{88FA6DAB-09EF-464E-A413-EE4B97F3F185}</Lic>
+								<Lic>{073CC9F3-87A6-43CF-A970-3EF2EDAD627C}</Lic>
+								<Lic>{F67A40BA-A354-4FFA-9F33-E1162C93EB6E}</Lic>
+								<Lic>{2AFA4536-55C8-4554-BE9D-FAF0C7E2EFC3}</Lic>
+								<Lic>{C7C2EEE2-23C9-47B9-82D4-0ADF5D82C0A0}</Lic>
+								<Lic>{D6854388-0494-4832-9169-8003C437CBA5}</Lic>
+								<Lic>{FBEA583E-F05B-406A-BD9F-2BFA59244888}</Lic>
+								<Lic>{7371CC89-F21A-4584-994B-8B112F6EB1A0}</Lic>
+								<Lic>{3DDCAB25-BF0E-412C-A721-DC77C1B8099C}</Lic>
+								<Lic>{2D2E5D68-23A1-4B53-BDF7-41C3861F6DB7}</Lic>
+								<Lic>{2752D285-16AD-4E89-AE6C-80E72784D264}</Lic>
+								<Lic>{65C77515-1C63-44D0-B1C5-CAFA820ADD41}</Lic>
+								<Lic>{AECBCEB9-4222-4369-8961-4A7488DAE203}</Lic>
+								<Lic>{B86A5E22-F738-4626-A9AA-59E7FA9884B3}</Lic>
+								<Lic>{A1AF8A04-C08D-4853-A5A0-0E6C3A278A8C}</Lic>
+								<Lic>{740BD5CC-57C2-46E1-B4F7-146749714343}</Lic>
+								<Lic>{E008E3C8-6BD9-491C-B673-DC45CC7AA4F1}</Lic>
+								<Lic>{352C9D05-CA12-4E54-B55A-575B64624E9C}</Lic>
+								<Lic>{6F53AC28-F6A2-47FE-89A6-F2AB8FE337D2}</Lic>
+								<Lic>{5F80BDB9-D9AC-40A4-9C8A-62EE6295DE0F}</Lic>
+								<Lic>{C0BF0BC1-CBED-4D55-86DC-0706BF289DCE}</Lic>
+								<Lic>{520DE751-9DB6-47CB-8240-BD5C466E7E64}</Lic>
+								<Lic>{6425CC43-74BE-40EB-B459-8349B5AB98BD}</Lic>
+								<Lic>{21C146FF-61EE-4911-969B-61339FE7DB69}</Lic>
+								<Lic>{BB7AE665-A8D6-41F6-954F-961DDDCDA42B}</Lic>
+								<Lic>{97127BE5-AB00-4872-8A0E-0120D605FA10}</Lic>
+								<Lic>{FF7D97E4-982F-4ABD-87CE-19164A0571CA}</Lic>
+								<Lic>{8C57D0A8-BD63-4554-BAE1-E9C797EF0D0E}</Lic>
+							</ManualSelect>
+						</Parameters>
+					</Variant>
+				</ProjectVariant>
 			</Licenses>
 			<Tasks>
 				<Task Id="3" Priority="20" CycleTime="500" AmsPort="350" AdtTasks="true">
 					<Name>PlcTask</Name>
 				</Task>
 			</Tasks>
+			<ProjectVariant PvUseLink="true">
+				<Variant>
+					<Name>PC1</Name>
+					<TargetNetId>5.24.131.22.1.1</TargetNetId>
+				</Variant>
+				<Variant>
+					<Name>PC2</Name>
+					<TargetNetId>5.62.33.82.1.1</TargetNetId>
+				</Variant>
+			</ProjectVariant>
 		</System>
 		<Plc>
 			<Project File="SimPLC.xti"/>
@@ -29,16 +525,28 @@
 			<Device File="Device 6 (EtherCAT Simulation).xti" Id="6"/>
 			<Device File="Device 7 (EtherCAT Simulation).xti" Id="7"/>
 			<Device File="Device 8 (EtherCAT Simulation).xti" Id="8"/>
+			<Device File="Local (EtherCAT).xti" Id="9"/>
 		</Io>
+		<Variants SpecificLocalBootFolder="true">
+			<Variant Save="true">
+				<Name>PC1</Name>
+				<Desc><![CDATA[CX2040]]></Desc>
+			</Variant>
+			<Variant>
+				<Name>PC2</Name>
+				<Desc><![CDATA[CX2043]]></Desc>
+			</Variant>
+		</Variants>
 	</Project>
 	<Mappings>
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500810000403}" Id="#x02030010"/>
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500820000403}" Id="#x02030050"/>
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500830000403}" Id="#x02030030"/>
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500840000403}" Id="#x02030080"/>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500850000403}" Id="#x02030060"/>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500860000403}" Id="#x02030040"/>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500870000403}" Id="#x02030020"/>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500880000403}" Id="#x02030070"/>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500850000403}" Id="#x02030070"/>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500860000403}" Id="#x02030060"/>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500870000403}" Id="#x02030040"/>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500880000403}" Id="#x02030090"/>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500890000403}" Id="#x02030020"/>
 	</Mappings>
 </TcSmProject>

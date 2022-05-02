@@ -1,11 +1,22 @@
 <?xml version="1.0"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.25" ClassName="CNestedPlcProjDef">
-	<Project GUID="{9513388F-C54D-4A5F-8542-5013168A39BC}" Name="SimPLC" PrjFilePath="..\..\SimPLC\SimPLC.plcproj" TmcFilePath="..\..\SimPLC\SimPLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="SimPLC\SimPLC.tmc">
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.29" ClassName="CNestedPlcProjDef" TcProjectVariant="PC1">
+	<Project GUID="{9513388F-C54D-4A5F-8542-5013168A39BC}" Name="SimPLC" PrjFilePath="..\..\SimPLC\SimPLC.plcproj" TmcFilePath="..\..\SimPLC\SimPLC.tmc" EnableImplicitDefines="true" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+		<ProjectVariant PvUseDefine="true">
+			<Variant>
+				<Name>PC1</Name>
+				<Name>PC2</Name>
+				<Defines></Defines>
+			</Variant>
+		</ProjectVariant>
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="1" TmcPath="SimPLC\SimPLC.tmc">
 			<Name>SimPLC Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
 				<Name>PlcTask Inputs</Name>
+				<Var>
+					<Name>MAIN.LocalEtherCATDevState</Name>
+					<Type>UINT</Type>
+				</Var>
 				<Var>
 					<Name>PRG_AnalogSim.arEL4102[1].Ch1</Name>
 					<Type>INT</Type>
@@ -151,6 +162,9 @@
 			<OwnerB Name="TIID^Device 8 (EtherCAT Simulation)^Term 4 (EL4102)">
 				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[8].Ch1" VarB="Channel 1^Output"/>
 				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[8].Ch2" VarB="Channel 2^Output"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Local (EtherCAT)">
+				<Link VarA="PlcTask Inputs^MAIN.LocalEtherCATDevState" VarB="Inputs^DevState"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
