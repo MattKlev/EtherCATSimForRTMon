@@ -10,7 +10,7 @@
 				<Target BkhfOrder="0100083571" CustomOrder="MattK">
 					<CustomComment><![CDATA[EL6070 SN 0100083571]]></CustomComment>
 					<TargetSelect TargetId="2">{94C91BCC-DC1F-4EBC-AEFD-2DC25DF4708B}</TargetSelect>
-					<LicenseDevice DongleHardwareId="2" DongleDevice="#x0302001a" DongleLevel="60" DongleSystemId="{3AE9723D-A99F-89F7-AC5B-7CE8AE5AAE3B}" DongleSerialNumber="0100083571"/>
+					<LicenseDevice DongleHardwareId="2" DongleDevice="#x0302001a" DongleLevel="60" DongleSerialNumber="0100083571"/>
 				</Target>
 				<ProjectVariant PvUseParameter="true">
 					<Variant>
@@ -48,8 +48,6 @@
 			<Device File="Device 4 (EtherCAT Simulation).xti" Id="4"/>
 			<Device File="Device 5 (EtherCAT Simulation).xti" Id="5"/>
 			<Device File="Device 6 (EtherCAT Simulation).xti" Id="6"/>
-			<Device File="Device 7 (EtherCAT Simulation).xti" Id="7"/>
-			<Device File="Device 8 (EtherCAT Simulation).xti" Id="8"/>
 			<Device File="Local (EtherCAT).xti" Id="9"/>
 		</Io>
 		<Variants SpecificLocalBootFolder="true">
@@ -68,10 +66,8 @@
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500820000403}" Id="#x02030050"/>
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500830000403}" Id="#x02030030"/>
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500840000403}" Id="#x02030080"/>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500850000403}" Id="#x02030070"/>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500860000403}" Id="#x02030060"/>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500870000403}" Id="#x02030040"/>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500880000403}" Id="#x02030090"/>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500850000403}" Id="#x02030060"/>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500860000403}" Id="#x02030040"/>
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500890000403}" Id="#x02030020"/>
 	</Mappings>
 </TcSmProject>

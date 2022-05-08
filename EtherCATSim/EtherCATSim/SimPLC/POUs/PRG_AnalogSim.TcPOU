@@ -7,8 +7,7 @@ VAR
 END_VAR
 VAR CONSTANT
 	{IF defined (PC1)}	
-
-		NumOfEL4102		:INT:=8;
+		NumOfEL4102		:INT:=4;
 	{ELSIF defined (PC2)}
 		NumOfEL4102		:INT:=4;
 	{END_IF}	
