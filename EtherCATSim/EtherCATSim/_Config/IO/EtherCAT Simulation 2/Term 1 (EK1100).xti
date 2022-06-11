@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.29" ClassName="CEcatSimuBoxDef" SubType="9910">
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9910">
+		<Name>__FILENAME__</Name>
+		<Comment><![CDATA[EK1100-0000-0018]]></Comment>
+		<ImageId>1000</ImageId>
+		<Vars VarGrpType="3" InsertType="1">
+			<Name>InfoData</Name>
+			<Var>
+				<Name>State</Name>
+				<Type>UINT</Type>
+				<BitOffs>2176</BitOffs>
+				<InOut>0</InOut>
+			</Var>
+		</Vars>
+		<EcatSimuBox Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100">
+			<BoxSettings PhysAddr="1001" PortDesc="59" UsedPorts="3" PdiControl="3072" VendorId="2" ProductCode="72100946" Revision="1179648" Flags="2">
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Fmmu/>
+				<Sm/>
+				<Sm/>
+				<Sm/>
+				<Sm/>
+				<Sm/>
+				<Sm/>
+				<Sm/>
+				<Sm/>
+			</BoxSettings>
+		</EcatSimuBox>
+	</Box>
+</TcSmItem>

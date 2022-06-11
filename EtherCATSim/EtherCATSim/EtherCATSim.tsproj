@@ -1,65 +1,37 @@
 <?xml version="1.0"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.29" TcProjectVariant="PC1">
-	<Project ProjectGUID="{6B4513DE-E205-4122-B1DD-99BA4266BC02}" TargetNetId="5.24.131.22.1.1" Target64Bit="true" ShowHideConfigurations="#x3c7">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.29">
+	<Project ProjectGUID="{6B4513DE-E205-4122-B1DD-99BA4266BC02}" TargetNetId="5.62.33.82.1.1" Target64Bit="true" ShowHideConfigurations="#x3c7">
 		<System>
-			<Settings MaxCpus="4" NonWinCpus="1">
-				<Cpu CpuId="3" BaseTime="500"/>
-				<IoIdleTask CycleTime="500"/>
+			<Settings MaxCpus="4" NonWinCpus="1" RouterMemory="536870912">
+				<Cpu CpuId="3" BaseTime="625"/>
+				<IoIdleTask Priority="7" CycleTime="625"/>
 			</Settings>
 			<Licenses CacheOrCheckLicensesOnStartup="true">
 				<Target BkhfOrder="0100083571" CustomOrder="MattK">
 					<CustomComment><![CDATA[EL6070 SN 0100083571]]></CustomComment>
 					<TargetSelect TargetId="2">{94C91BCC-DC1F-4EBC-AEFD-2DC25DF4708B}</TargetSelect>
-					<LicenseDevice DongleHardwareId="2" DongleDevice="#x0302001a" DongleLevel="60" DongleSerialNumber="0100083571"/>
+					<TargetSelect TargetId="2">{66689887-CCBD-452C-AC9A-039D997C6E66}</TargetSelect>
+					<LicenseDevice DongleHardwareId="2" DongleDevice="#x0302001a" DongleLevel="60" DongleSystemId="{DDC6C2CD-ADD2-D4DE-32E5-81F0A2EBB271}" DongleSerialNumber="0100083571"/>
 				</Target>
-				<ProjectVariant PvUseParameter="true">
-					<Variant>
-						<Name>PC1</Name>
-						<Name>PC2</Name>
-						<Parameters>
-							<ManualSelect/>
-						</Parameters>
-					</Variant>
-				</ProjectVariant>
 			</Licenses>
 			<Tasks>
-				<Task Id="3" Priority="20" CycleTime="500" AmsPort="350" AdtTasks="true">
+				<Task Id="3" Priority="6" CycleTime="625" AmsPort="350" AdtTasks="true">
 					<Name>PlcTask</Name>
 				</Task>
 			</Tasks>
-			<ProjectVariant PvUseLink="true">
-				<Variant>
-					<Name>PC1</Name>
-					<TargetNetId>5.24.131.22.1.1</TargetNetId>
-				</Variant>
-				<Variant>
-					<Name>PC2</Name>
-					<TargetNetId>5.62.33.82.1.1</TargetNetId>
-				</Variant>
-			</ProjectVariant>
 		</System>
 		<Plc>
 			<Project File="SimPLC.xti"/>
 		</Plc>
 		<Io>
-			<Device File="Device 1 (EtherCAT Simulation).xti" Id="1"/>
-			<Device File="Device 2 (EtherCAT Simulation).xti" Id="2"/>
-			<Device File="Device 3 (EtherCAT Simulation).xti" Id="3"/>
-			<Device File="Device 4 (EtherCAT Simulation).xti" Id="4"/>
-			<Device File="Device 5 (EtherCAT Simulation).xti" Id="5"/>
-			<Device File="Device 6 (EtherCAT Simulation).xti" Id="6"/>
+			<Device File="EtherCAT Simulation 1.xti" Id="1"/>
+			<Device File="EtherCAT Simulation 2.xti" Id="2"/>
+			<Device File="EtherCAT Simulation 3.xti" Id="3"/>
+			<Device File="EtherCAT Simulation 4.xti" Id="4"/>
+			<Device File="EtherCAT Simulation 5.xti" Id="5"/>
+			<Device File="EtherCAT Simulation 6.xti" Id="6"/>
 			<Device File="Local (EtherCAT).xti" Id="9"/>
 		</Io>
-		<Variants SpecificLocalBootFolder="true">
-			<Variant Save="true">
-				<Name>PC1</Name>
-				<Desc><![CDATA[CX2040]]></Desc>
-			</Variant>
-			<Variant>
-				<Name>PC2</Name>
-				<Desc><![CDATA[CX2043]]></Desc>
-			</Variant>
-		</Variants>
 	</Project>
 	<Mappings>
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500810000403}" Id="#x02030010"/>

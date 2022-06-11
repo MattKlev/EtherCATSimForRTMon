@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <POU Name="PRG_SystemFunctions" Id="{9e9fb9bf-2b6b-452f-b8c6-179b9c7cb25a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_SystemFunctions
+VAR
+	xReboot			:BOOL;
+	fbReboot		:NT_Reboot;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbReboot(
+	NETID:='' , 
+	DELAY:=0, 
+	START:=xReboot);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

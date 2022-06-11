@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <DUT Name="ST_EC_SIM_Device_Inputs" Id="{abd9f4f1-66f4-4905-b091-ede4231214f8}">
+    <Declaration><![CDATA[TYPE ST_EC_SIM_Device_Inputs :
+STRUCT
+	Status							:UDINT;
+	Telegram_Counter				:UDINT;
+	Dc_Time							:ULINT;
+	Dc_Time_to_System_Time_Offset	:ULINT;
+	{attribute 'displaymode':='hex'} 
+	DevState						:UINT;
+	AmsNetId						:AMSNETID;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

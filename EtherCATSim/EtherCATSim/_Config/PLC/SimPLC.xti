@@ -1,13 +1,81 @@
 <?xml version="1.0"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.29" ClassName="CNestedPlcProjDef" TcProjectVariant="PC1">
-	<Project GUID="{9513388F-C54D-4A5F-8542-5013168A39BC}" Name="SimPLC" PrjFilePath="..\..\SimPLC\SimPLC.plcproj" TmcFilePath="..\..\SimPLC\SimPLC.tmc" EnableImplicitDefines="true" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<ProjectVariant PvUseDefine="true">
-			<Variant>
-				<Name>PC1</Name>
-				<Name>PC2</Name>
-				<Defines></Defines>
-			</Variant>
-		</ProjectVariant>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.29" ClassName="CNestedPlcProjDef">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
+			<BitSize>48</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>6</Elements>
+			</ArrayInfo>
+			<Format>
+				<Printf>%d.%d.%d.%d.%d.%d</Printf>
+				<Parameter>[0]</Parameter>
+				<Parameter>[1]</Parameter>
+				<Parameter>[2]</Parameter>
+				<Parameter>[3]</Parameter>
+				<Parameter>[4]</Parameter>
+				<Parameter>[5]</Parameter>
+			</Format>
+		</DataType>
+		<DataType>
+			<Name GUID="{DE2F1A3E-DACF-58C2-6374-430EE297FC95}" AutoDeleteType="true">ST_EC_SIM_Device_Inputs</Name>
+			<BitSize>256</BitSize>
+			<SubItem>
+				<Name>Status</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Telegram_Counter</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>32</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Dc_Time</Name>
+				<Type GUID="{18071995-0000-0000-0000-00000000000B}">ULINT</Type>
+				<BitSize>64</BitSize>
+				<BitOffs>64</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Dc_Time_to_System_Time_Offset</Name>
+				<Type GUID="{18071995-0000-0000-0000-00000000000B}">ULINT</Type>
+				<BitSize>64</BitSize>
+				<BitOffs>128</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DevState</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>192</BitOffs>
+				<Properties>
+					<Property>
+						<Name>displaymode</Name>
+						<Value>hex</Value>
+					</Property>
+				</Properties>
+			</SubItem>
+			<SubItem>
+				<Name>AmsNetId</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
+				<BitSize>48</BitSize>
+				<BitOffs>208</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name IecBaseType="true">ARRAY [1..6] OF ST_EC_SIM_Device_Inputs</Name>
+			<BitSize>1536</BitSize>
+			<BaseType GUID="{DE2F1A3E-DACF-58C2-6374-430EE297FC95}">ST_EC_SIM_Device_Inputs</BaseType>
+			<ArrayInfo>
+				<LBound>1</LBound>
+				<Elements>6</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<Project GUID="{9513388F-C54D-4A5F-8542-5013168A39BC}" Name="SimPLC" PrjFilePath="..\..\SimPLC\SimPLC.plcproj" TmcFilePath="..\..\SimPLC\SimPLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
 		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="1" TmcPath="SimPLC\SimPLC.tmc">
 			<Name>SimPLC Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
@@ -16,6 +84,10 @@
 				<Var>
 					<Name>MAIN.LocalEtherCATDevState</Name>
 					<Type>UINT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_EtherCATSimMasterDiag.EcSimNetorkDiag</Name>
+					<Type GUID="{10DB7FA0-0721-C4DC-96B4-A61154CDE793}">ARRAY [1..6] OF ST_EC_SIM_Device_Inputs</Type>
 				</Var>
 				<Var>
 					<Name>PRG_AnalogSim.arEL4102[1].Ch1</Name>
@@ -49,6 +121,22 @@
 					<Name>PRG_AnalogSim.arEL4102[4].Ch2</Name>
 					<Type>INT</Type>
 				</Var>
+				<Var>
+					<Name>PRG_AnalogSim.arEL4102[5].Ch1</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_AnalogSim.arEL4102[5].Ch2</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_AnalogSim.arEL4102[6].Ch1</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>PRG_AnalogSim.arEL4102[6].Ch2</Name>
+					<Type>INT</Type>
+				</Var>
 			</Vars>
 			<Vars VarGrpType="2" AreaNo="1">
 				<Name>PlcTask Outputs</Name>
@@ -64,50 +152,106 @@
 					<ManualConfig>
 						<OTCID>#x02010030</OTCID>
 					</ManualConfig>
-					<Priority>20</Priority>
-					<CycleTime>50000</CycleTime>
+					<Priority>6</Priority>
+					<CycleTime>62500</CycleTime>
 				</Context>
 			</Contexts>
 			<TaskPouOids>
-				<TaskPouOid Prio="20" OTCID="#x08502001"/>
+				<TaskPouOid Prio="6" OTCID="#x08502001"/>
 			</TaskPouOids>
 		</Instance>
 	</Project>
 	<Mappings>
 		<OwnerA Name="SimPLC Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT Simulation)^Term 2 (EL5001)">
+			<OwnerB Name="TIID^EtherCAT Simulation 1">
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[1]^AmsNetId" VarB="Inputs^AmsNetId"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[1]^Dc_Time" VarB="Inputs^Dc Time"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[1]^Dc_Time_to_System_Time_Offset" VarB="Inputs^Dc Time to System Time Offset"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[1]^DevState" VarB="Inputs^DevState"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[1]^Status" VarB="Inputs^Status"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[1]^Telegram_Counter" VarB="Inputs^Telegram Counter"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Simulation 1^Term 2 (EL5001)">
 				<Link VarA="PlcTask Outputs^PRG_EncoderSim.SimEncoderCount" VarB="SSI Inputs^Counter value"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT Simulation)^Term 4 (EL4102)">
+			<OwnerB Name="TIID^EtherCAT Simulation 1^Term 4 (EL4102)">
 				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[1].Ch1" VarB="Channel 1^Output"/>
 				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[1].Ch2" VarB="Channel 2^Output"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 2 (EtherCAT Simulation)^Term 2 (EL5001)">
+			<OwnerB Name="TIID^EtherCAT Simulation 2">
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[2]^AmsNetId" VarB="Inputs^AmsNetId"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[2]^Dc_Time" VarB="Inputs^Dc Time"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[2]^Dc_Time_to_System_Time_Offset" VarB="Inputs^Dc Time to System Time Offset"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[2]^DevState" VarB="Inputs^DevState"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[2]^Status" VarB="Inputs^Status"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[2]^Telegram_Counter" VarB="Inputs^Telegram Counter"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Simulation 2^Term 2 (EL5001)">
 				<Link VarA="PlcTask Outputs^PRG_EncoderSim.SimEncoderCount" VarB="SSI Inputs^Counter value"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 2 (EtherCAT Simulation)^Term 4 (EL4102)">
+			<OwnerB Name="TIID^EtherCAT Simulation 2^Term 4 (EL4102)">
 				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[2].Ch1" VarB="Channel 1^Output"/>
 				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[2].Ch2" VarB="Channel 2^Output"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 3 (EtherCAT Simulation)^Term 2 (EL5001)">
+			<OwnerB Name="TIID^EtherCAT Simulation 3">
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[3]^AmsNetId" VarB="Inputs^AmsNetId"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[3]^Dc_Time" VarB="Inputs^Dc Time"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[3]^Dc_Time_to_System_Time_Offset" VarB="Inputs^Dc Time to System Time Offset"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[3]^DevState" VarB="Inputs^DevState"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[3]^Status" VarB="Inputs^Status"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[3]^Telegram_Counter" VarB="Inputs^Telegram Counter"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Simulation 3^Term 2 (EL5001)">
 				<Link VarA="PlcTask Outputs^PRG_EncoderSim.SimEncoderCount" VarB="SSI Inputs^Counter value"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 3 (EtherCAT Simulation)^Term 4 (EL4102)">
+			<OwnerB Name="TIID^EtherCAT Simulation 3^Term 4 (EL4102)">
 				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[3].Ch1" VarB="Channel 1^Output"/>
 				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[3].Ch2" VarB="Channel 2^Output"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 4 (EtherCAT Simulation)^Term 2 (EL5001)">
+			<OwnerB Name="TIID^EtherCAT Simulation 4">
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[4]^AmsNetId" VarB="Inputs^AmsNetId"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[4]^Dc_Time" VarB="Inputs^Dc Time"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[4]^Dc_Time_to_System_Time_Offset" VarB="Inputs^Dc Time to System Time Offset"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[4]^DevState" VarB="Inputs^DevState"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[4]^Status" VarB="Inputs^Status"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[4]^Telegram_Counter" VarB="Inputs^Telegram Counter"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Simulation 4^Term 2 (EL5001)">
 				<Link VarA="PlcTask Outputs^PRG_EncoderSim.SimEncoderCount" VarB="SSI Inputs^Counter value"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 4 (EtherCAT Simulation)^Term 4 (EL4102)">
+			<OwnerB Name="TIID^EtherCAT Simulation 4^Term 4 (EL4102)">
 				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[4].Ch1" VarB="Channel 1^Output"/>
 				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[4].Ch2" VarB="Channel 2^Output"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 5 (EtherCAT Simulation)^Term 2 (EL5001)">
+			<OwnerB Name="TIID^EtherCAT Simulation 5">
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[5]^AmsNetId" VarB="Inputs^AmsNetId"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[5]^Dc_Time" VarB="Inputs^Dc Time"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[5]^Dc_Time_to_System_Time_Offset" VarB="Inputs^Dc Time to System Time Offset"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[5]^DevState" VarB="Inputs^DevState"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[5]^Status" VarB="Inputs^Status"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[5]^Telegram_Counter" VarB="Inputs^Telegram Counter"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Simulation 5^Term 2 (EL5001)">
 				<Link VarA="PlcTask Outputs^PRG_EncoderSim.SimEncoderCount" VarB="SSI Inputs^Counter value"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 6 (EtherCAT Simulation)^Term 2 (EL5001)">
+			<OwnerB Name="TIID^EtherCAT Simulation 5^Term 4 (EL4102)">
+				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[5].Ch1" VarB="Channel 1^Output"/>
+				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[5].Ch2" VarB="Channel 2^Output"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Simulation 6">
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[6]^AmsNetId" VarB="Inputs^AmsNetId"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[6]^Dc_Time" VarB="Inputs^Dc Time"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[6]^Dc_Time_to_System_Time_Offset" VarB="Inputs^Dc Time to System Time Offset"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[6]^DevState" VarB="Inputs^DevState"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[6]^Status" VarB="Inputs^Status"/>
+				<Link VarA="PlcTask Inputs^PRG_EtherCATSimMasterDiag.EcSimNetorkDiag[6]^Telegram_Counter" VarB="Inputs^Telegram Counter"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Simulation 6^Term 2 (EL5001)">
 				<Link VarA="PlcTask Outputs^PRG_EncoderSim.SimEncoderCount" VarB="SSI Inputs^Counter value"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Simulation 6^Term 4 (EL4102)">
+				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[6].Ch1" VarB="Channel 1^Output"/>
+				<Link VarA="PlcTask Inputs^PRG_AnalogSim.arEL4102[6].Ch2" VarB="Channel 2^Output"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Local (EtherCAT)">
 				<Link VarA="PlcTask Inputs^MAIN.LocalEtherCATDevState" VarB="Inputs^DevState"/>

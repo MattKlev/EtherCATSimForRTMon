@@ -6,11 +6,7 @@ VAR
 	arEL4102			:ARRAY[1..NumOfEL4102] OF FB_EL4102_Sim;
 END_VAR
 VAR CONSTANT
-	{IF defined (PC1)}	
-		NumOfEL4102		:INT:=4;
-	{ELSIF defined (PC2)}
-		NumOfEL4102		:INT:=4;
-	{END_IF}	
+	NumOfEL4102			:INT:=6;
 END_VAR
 VAR_TEMP
 	i					:INT;

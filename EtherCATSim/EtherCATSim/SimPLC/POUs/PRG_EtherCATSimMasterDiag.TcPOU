@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <POU Name="PRG_EtherCATSimMasterDiag" Id="{ae80a5f1-ab9e-463d-a30e-c2f6f38f86cf}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_EtherCATSimMasterDiag
+VAR
+	EcSimNetorkDiag		AT%I* 	:ARRAY[1..NumOfEcSimNetWorks] OF ST_EC_SIM_Device_Inputs;
+	EcDevState					:ARRAY[1..NumOfEcSimNetWorks] OF STRING;
+END_VAR
+VAR CONSTANT
+	NumOfEcSimNetWorks			:UDINT:=6;
+END_VAR
+VAR_TEMP
+	i							:UDINT;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+FOR i:=1 TO NumOfEcSimNetWorks DO
+	EcDevState[i]:=F_ConvMasterDevStateToString(nState:=EcSimNetorkDiag[i].DevState);
+END_FOR]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
